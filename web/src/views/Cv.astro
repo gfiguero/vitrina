@@ -15,6 +15,6 @@ const body = renderCvBody({ locale });
     <a class="btn btn-primary" href={pdf} download>{es ? 'Descargar PDF' : 'Download PDF'}</a>
     <a class="btn" href={`mailto:${data.profile.email}`}>{es ? 'Escríbeme' : 'Get in touch'}</a>
   </div>
-  <div set:html={body} />
+  <div class="cv-paper"><div set:html={body} /></div>
   <style is:global set:html={cvStyles()}></style>
 </Base>

@@ -50,3 +50,26 @@
   .cv { max-width: none; }
   .no-print { display: none !important; }
 }
+
+/* Vista web: el CV se presenta sobre una hoja blanca, independiente del tema del sitio.
+   Sus colores están fijados para papel (tinta oscura), así que sobre el fondo oscuro del
+   sitio no se leerían. El PDF no usa este envoltorio y no se ve afectado. */
+.cv-paper {
+  background: #fff;
+  border: 1px solid #d8d4cd;
+  border-radius: 4px;
+  padding: 2.6rem 2.9rem;
+  margin: 1.5rem 0 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .07), 0 10px 30px rgba(0, 0, 0, .07);
+}
+/* En pantalla el cuerpo de 9.6pt queda pequeño: sube sólo en la vista web. */
+.cv-paper .cv { font-size: 10.8pt; }
+
+@media (max-width: 40rem) {
+  .cv-paper { padding: 1.5rem 1.25rem; border-radius: 0; margin-left: -1.5rem; margin-right: -1.5rem; }
+}
+
+@media print {
+  .cv-paper { background: none; border: 0; box-shadow: none; padding: 0; margin: 0; }
+  .cv-paper .cv { font-size: 9.6pt; }
+}

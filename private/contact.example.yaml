@@ -1,0 +1,7 @@
+# Copia este archivo a private/contact.yaml y completa los datos.
+# private/contact.yaml está en .gitignore: nunca se versiona ni se publica en el sitio.
+# Sólo se inyecta en el PDF del CV cuando se genera con `npm run cv -- --private`.
+phone: "+56 9 0000 0000"
+address: "Comuna, Región, País"
+national_id: ""
+birthdate: ""

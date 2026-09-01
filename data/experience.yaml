@@ -1,0 +1,278 @@
+# Experiencia profesional, de más reciente a más antigua.
+# `end: null` significa "actualidad". `highlights` son logros, no tareas.
+# `tags` alimentan los filtros del sitio y la selección de bullets por perfil de postulación.
+
+note:
+  es: >-
+    Parte de estos cargos se desempeñaron de forma simultánea. Entre 2012 y 2017, combinando
+    empleo dependiente con consultoría independiente y proyectos por encargo; y entre noviembre
+    de 2024 y abril de 2026, atendiendo dos plataformas en paralelo sobre un mismo stack.
+  en: >-
+    Some of these roles overlapped. Between 2012 and 2017 I combined employment with
+    independent consulting and commissioned projects; between November 2024 and April 2026 I
+    ran two platforms in parallel on the same stack.
+
+roles:
+  - company: CaptaLog
+    url: https://www.captalog.com
+    role:
+      es: "Ingeniero de Software · Equipo Fundador y Socio"
+      en: "Software Engineer · Founding Team Member and Partner"
+    start: 2024-12
+    end: null
+    current: true
+    stack: [Ruby on Rails 8, MySQL 8, Amazon RDS, Amazon EC2, React Native, Expo, MCP]
+    tags: [saas, movil, offline-first, fundador, ia, producto]
+    highlights:
+      - es: >-
+          Miembro del equipo fundador y socio de la empresa, con participación en las decisiones
+          de producto, técnicas y de negocio.
+        en: >-
+          Founding team member and partner, involved in product, technical and business
+          decisions.
+      - es: >-
+          Diseño y desarrollo desde cero de la aplicación móvil con arquitectura offline-first,
+          en React Native sobre Expo, para iOS y Android. Más de un año de desarrollo continuo;
+          actualmente publicada en App Store y Google Play.
+        en: >-
+          Designed and built the offline-first mobile app from scratch in React Native on Expo,
+          for iOS and Android. Over a year of continuous development; live on the App Store and
+          Google Play.
+      - es: >-
+          Definición e implementación de la estrategia de sincronización: envío fire-and-forget
+          desde el dispositivo y un sistema de conciliación simétrico posterior, que permite
+          capturar información en terreno sin conectividad y resolver divergencias entre
+          dispositivo y servidor sin pérdida de datos.
+        en: >-
+          Defined and implemented the synchronisation strategy: fire-and-forget dispatch from
+          the device plus a symmetric reconciliation pass, so field data is captured without
+          connectivity and device/server divergence is resolved without data loss.
+      - es: >-
+          Desarrollo fullstack de la plataforma web, incluyendo el motor de pautas de inspección
+          con múltiples tipos de pregunta y estructuras anidadas.
+        en: >-
+          Fullstack development of the web platform, including the inspection checklist engine
+          with multiple question types and nested structures.
+      - es: >-
+          Diseño y construcción de la integración MCP, que expone la plataforma a asistentes de
+          inteligencia artificial para creación de tareas, edición y publicación de pautas,
+          gestión de incidencias y consulta documental.
+        en: >-
+          Designed and built the MCP integration, exposing the platform to AI assistants for
+          task creation, checklist editing and publishing, issue management and document
+          lookup.
+      - es: >-
+          Detección, documentación y resolución de fallas en producción, incluyendo errores de
+          validación silenciosa que provocaban fallos completos de renderizado en el editor.
+        en: >-
+          Detected, documented and resolved production failures, including silent validation
+          errors that caused complete rendering failures in the editor.
+      - es: >-
+          Análisis competitivo del mercado de software de inspección en terreno como insumo para
+          decisiones de producto.
+        en: >-
+          Competitive analysis of the field inspection software market as input for product
+          decisions.
+
+  - company: Valopes
+    url: https://www.valopes.com
+    role:
+      es: Ingeniero de Software
+      en: Software Engineer
+    start: 2024-11
+    end: 2026-04
+    stack: [Ruby on Rails 8, MySQL 8, Amazon RDS, Amazon EC2]
+    tags: [saas, sostenibilidad, produccion]
+    highlights:
+      - es: >-
+          Desarrollo y mantención de una plataforma SaaS orientada al cálculo de huella de
+          carbono y a la gestión de residuos.
+        en: >-
+          Development and maintenance of a SaaS platform for carbon footprint calculation and
+          waste management.
+      - es: >-
+          Resolución de problemas de producto surgidos del uso continuo de la plataforma en
+          producción: diagnóstico, corrección y estabilización sobre un sistema en operación con
+          usuarios activos.
+        en: >-
+          Resolved product issues arising from continuous production use: diagnosis, correction
+          and stabilisation on a live system with active users.
+
+  - company:
+      es: Proyectos propios y para terceros
+      en: Own and client projects
+    role:
+      es: Consultor y Desarrollador Freelance
+      en: Freelance Consultant and Developer
+    start: 2023
+    end: 2024
+    stack: []
+    tags: [freelance]
+    highlights:
+      - es: >-
+          Desarrollo de proyectos a medida para clientes externos e iniciativas propias,
+          cubriendo diseño, implementación y puesta en producción.
+        en: >-
+          Custom projects for external clients and own initiatives, covering design,
+          implementation and production rollout.
+
+  - company: AIM Manager
+    role:
+      es: Lead Fullstack Engineer
+      en: Lead Fullstack Engineer
+    start: 2021
+    end: 2023
+    stack: [Ruby on Rails, Stimulus, Turbo, PostgreSQL, Tailwind, Docker]
+    tags: [liderazgo, datos, legacy]
+    highlights:
+      - es: Liderazgo técnico en soluciones de gestión operacional automatizada.
+        en: Technical leadership on automated operational management solutions.
+      - es: Actualización de endpoints, integración de aplicaciones y optimización de recursos.
+        en: Endpoint modernisation, application integration and resource optimisation.
+      - es: Manejo de grandes volúmenes de datos sobre sistemas sin documentación previa.
+        en: Handling large data volumes on systems with no prior documentation.
+
+  - company:
+      es: Gobierno de Chile
+      en: Government of Chile
+    role:
+      es: Experto en Innovación y Tecnología
+      en: Innovation and Technology Expert
+    start: 2018
+    end: 2021
+    stack: [Symfony, .NET, Java, Ruby, MySQL, PostgreSQL, DB2, CentOS]
+    tags: [sector-publico, integracion, legacy]
+    highlights:
+      - es: >-
+          Mantención operacional y gestión de proyectos estratégicos con la Comisión Nacional de
+          Seguridad de Tránsito, Carabineros de Chile, Ministerio de Transportes y
+          Telecomunicaciones, Ministerio de Salud y Registro Civil.
+        en: >-
+          Operational maintenance and management of strategic projects with the National Road
+          Safety Commission, the national police force, the Ministry of Transport and
+          Telecommunications, the Ministry of Health and the Civil Registry.
+      - es: >-
+          Iniciativas orientadas a reducir la mortalidad en accidentes de tránsito mediante
+          integración de datos entre instituciones.
+        en: >-
+          Initiatives aimed at reducing road accident mortality through cross-institution data
+          integration.
+
+  - company: Unisign
+    role:
+      es: Ingeniero de Software
+      en: Software Engineer
+    start: 2015
+    end: 2018
+    stack: [PHP, Symfony, HTML5, Bootstrap, MySQL]
+    tags: [erp, comunidad]
+    highlights:
+      - es: Desarrollo de software ERP-CRM, gestión de contenidos web y pedidos en línea.
+        en: ERP-CRM software, web content management and online ordering.
+      - es: Desarrollo de un sistema de gestión de información para comunidades vecinales.
+        en: Built an information management system for neighbourhood communities.
+
+  - company:
+      es: Consultor Tecnológico Independiente
+      en: Independent Technology Consultant
+    role:
+      es: Desarrollador Fullstack
+      en: Fullstack Developer
+    start: 2013
+    end: 2017
+    stack: [SQL, VPS]
+    tags: [freelance, sector-publico]
+    highlights:
+      - es: >-
+          Desarrollo de aplicaciones para empresas, emprendimientos e instituciones de interés
+          público, incluyendo cuerpos de bomberos y municipalidades.
+        en: >-
+          Applications for companies, startups and public interest institutions, including fire
+          departments and municipalities.
+
+  - company:
+      es: Municipalidad de Quillota
+      en: Municipality of Quillota
+    role:
+      es: Analista y Desarrollador
+      en: Analyst and Developer
+    start: 2013
+    end: 2015
+    stack: [CodeIgniter, Symfony, HTML, VPS]
+    tags: [sector-publico, social, liderazgo]
+    highlights:
+      - es: >-
+          Planificación y desarrollo del sistema de administración de recursos para la ficha
+          social en la Dirección de Desarrollo Comunal.
+        en: >-
+          Planned and built the resource management system for the social registry at the
+          Community Development Department.
+      - es: Jefatura de planificación del proyecto.
+        en: Project planning lead.
+
+  - company: Acción S.A.
+    role:
+      es: Ingeniero de Sistemas
+      en: Systems Engineer
+    start: 2012
+    end: 2015
+    stack: [PHP, HTML, Java, JavaScript]
+    tags: [infraestructura, open-source]
+    highlights:
+      - es: >-
+          Administración de servidores de cámaras de vigilancia; modificación de código y
+          mejoras sobre software open source.
+        en: >-
+          Administered surveillance camera servers; modified code and improved open source
+          software.
+
+  - company: Prosys
+    role:
+      es: Desarrollador Fullstack
+      en: Fullstack Developer
+    start: 2013
+    end: 2014
+    stack: [PHP, HTML, JavaScript]
+    tags: [datos, retail]
+    highlights:
+      - es: >-
+          Desarrollo y mantención de sistemas de gestión interna para Cencosud: generación de
+          informes, consultas avanzadas y análisis de datos.
+        en: >-
+          Built and maintained internal management systems for Cencosud: reporting, advanced
+          queries and data analysis.
+
+  - company:
+      es: Centro Científico Tecnológico de Valparaíso (CCTVal, USM)
+      en: Valparaíso Science and Technology Centre (CCTVal, USM)
+    role:
+      es: Analista y Desarrollador
+      en: Analyst and Developer
+    start: 2008
+    end: 2011
+    stack: [PHP, HTML, JavaScript]
+    tags: [investigacion, legacy]
+    highlights:
+      - es: >-
+          Administración de recursos para proyectos de investigación, sobre software existente
+          no documentado.
+        en: >-
+          Resource management for research projects, on existing undocumented software.
+
+  - company:
+      es: Instituto Internacional para la Innovación Empresarial (3IE)
+      en: International Institute for Business Innovation (3IE)
+    role:
+      es: Investigador
+      en: Researcher
+    start: 2007
+    end: 2008
+    stack: [.NET, MySQL, R]
+    tags: [investigacion, modelado]
+    highlights:
+      - es: >-
+          Diseño y desarrollo de modelos matemáticos y algoritmos de predicción meteorológica a
+          partir de fuentes estadísticas y mecanismos heurísticos.
+        en: >-
+          Designed and developed mathematical models and weather prediction algorithms from
+          statistical sources and heuristic mechanisms.

@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../../../lib/data.mjs';
+
+const { locale = 'es' } = Astro.props;
+const es = locale === 'es';
+const all = projects();
+---
+<Base locale={locale} page={es ? '/proyectos' : '/projects'} title={es ? 'Proyectos' : 'Projects'}>
+  <p class="eyebrow">{es ? 'Portfolio' : 'Portfolio'}</p>
+  <h1>{es ? 'Proyectos' : 'Projects'}</h1>
+  <p class="lead">
+    {es
+      ? 'Plataformas en producción, herramientas propias y trabajo para el sector público. Lo que se puede mostrar, con enlace al código cuando existe.'
+      : 'Production platforms, personal tools and public sector work. What can be shown, linked to source where it exists.'}
+  </p>
+  {all.map((project) => <ProjectCard project={project} locale={locale} detailed={true} />)}
+</Base>

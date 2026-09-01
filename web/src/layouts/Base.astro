@@ -1,0 +1,60 @@
+---
+import '../styles/global.css';
+import { data, t } from '../../../lib/data.mjs';
+
+const { locale = 'es', title, description, page = '' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const p = (path) => `${base}${locale === 'en' ? '/en' : ''}${path}` || '/';
+
+const nav = locale === 'es'
+  ? [['', 'Inicio'], ['/trayectoria', 'Trayectoria'], ['/proyectos', 'Proyectos'], ['/cv', 'CV']]
+  : [['', 'Home'], ['/career', 'Career'], ['/projects', 'Projects'], ['/cv', 'CV']];
+
+// La misma página en el otro idioma.
+const alt = locale === 'es'
+  ? { href: `${base}/en${{ '': '', '/trayectoria': '/career', '/proyectos': '/projects', '/cv': '/cv' }[page] ?? ''}`, label: 'English' }
+  : { href: `${base}${{ '': '', '/career': '/trayectoria', '/projects': '/proyectos', '/cv': '/cv' }[page] ?? ''}` || '/', label: 'Español' };
+
+const fullTitle = title ? `${title} · ${data.profile.name}` : data.profile.name;
+const desc = description ?? t(data.profile.tagline, locale);
+---
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:type" content="profile" />
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+  </head>
+  <body>
+    <header class="site-head">
+      <div class="wrap">
+        <a class="brand" href={p('')}>{data.profile.name}</a>
+        <nav class="site-nav">
+          {nav.map(([href, label]) => (
+            <a href={p(href) || '/'} aria-current={page === href ? 'page' : undefined}>{label}</a>
+          ))}
+        </nav>
+        <a class="lang" href={alt.href || '/'}>{alt.label}</a>
+      </div>
+    </header>
+
+    <main><div class="wrap"><slot /></div></main>
+
+    <footer class="site-foot">
+      <div class="wrap">
+        <span>© {new Date().getFullYear()} {data.profile.name} · {t(data.profile.location, locale)}</span>
+        <span>
+          {data.profile.links.map((l, i) => (
+            <>{i > 0 ? ' · ' : ''}<a href={l.url}>{l.label}</a></>
+          ))}
+          {' · '}<a href={`mailto:${data.profile.email}`}>{data.profile.email}</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+degrees:
+  - title:
+      es: "Ingeniería Civil Informática — Egresado"
+      en: "Computer Engineering — Coursework completed"
+    institution:
+      es: "Universidad Técnica Federico Santa María, Valparaíso"
+      en: "Universidad Técnica Federico Santa María, Valparaíso, Chile"
+    highlights:
+      - es: "Ayudante y tutor en los departamentos de Física e Informática."
+        en: "Teaching assistant and tutor in the Physics and Computer Science departments."
+      - es: >-
+          Colaborador de la Federación de Estudiantes y centros de alumnos; destacado por varios
+          años consecutivos en actividades extraprogramáticas.
+        en: >-
+          Contributor to the student federation and student councils; recognised for several
+          consecutive years in extracurricular activities.
+
+leadership:
+  label:
+    es: Liderazgo y comunicación
+    en: Leadership and communication
+  items:
+    - es: >-
+        Jefe de planificación en proyecto de administración de recursos en una dirección de
+        desarrollo comunal.
+      en: >-
+        Planning lead on a resource management project for a municipal community development
+        department.
+    - es: "Presentaciones y exposiciones en ferias y conferencias de innovación y emprendimiento."
+      en: "Talks and presentations at innovation and entrepreneurship fairs and conferences."
+    - es: "Coordinación de talleres y actividades juveniles; dictado de charlas de bienvenida."
+      en: "Coordinated workshops and youth activities; delivered welcome talks."

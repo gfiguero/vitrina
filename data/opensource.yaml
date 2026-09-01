@@ -1,0 +1,43 @@
+intro:
+  es: "Contribuyo donde me topo con problemas reales, no para inflar actividad."
+  en: "I contribute where I hit real problems, not to farm activity."
+
+contributions:
+  - project: python-validity
+    url: https://github.com/uunicorn/python-validity/pull/256
+    ref: "uunicorn/python-validity#256"
+    year: 2026
+    summary:
+      es: >-
+        Sensores de huella Synaptics en Linux. Levanté un 06cb:00b7 (silicio 0xd51) de fábrica,
+        sin particiones de flash, hasta dejarlo enrolando huellas; luego aporté el resultado
+        como control positivo de una falla de reset_blob que tenía bloqueado a otro
+        contribuyente desde hacía meses, más un arreglo para un bug de arranque que deja el
+        driver inutilizable de forma permanente si se interrumpe la carga de firmware.
+      en: >-
+        Synaptics fingerprint sensors on Linux. Brought up a factory-empty 06cb:00b7 (0xd51
+        silicon) from zero flash partitions to working enrollment, then contributed the result
+        as a positive control for a reset_blob failure that had another contributor stuck for
+        months, plus a fix for a startup bug that permanently bricks the driver if a firmware
+        upload is interrupted.
+  - project: libfprint
+    url: https://gitlab.freedesktop.org/libfprint/libfprint/-/merge_requests/626
+    ref: "libfprint!626"
+    year: 2026
+    summary:
+      es: >-
+        Validé por hardware el driver nativo Validity/Synaptics sobre silicio al que su autor no
+        tenía acceso, y reporté dos bloqueadores encontrados en el proceso, incluido uno que
+        afectaba a dispositivos que él ya había dado por validados.
+      en: >-
+        Hardware-validated the native Validity/Synaptics driver on silicon its author had no
+        access to, and reported two blockers found in the process, including one affecting
+        devices he had already validated.
+
+note:
+  es: >-
+    Ambas contribuciones implicaron leer trazas de protocolo USB, blobs de firmware firmados y
+    handshakes TLS contra un sensor sin documentación pública.
+  en: >-
+    Both involved reading USB protocol traces, signed firmware blobs, and TLS handshakes against
+    a sensor with no public documentation.

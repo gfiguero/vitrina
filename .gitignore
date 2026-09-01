@@ -1,0 +1,26 @@
+# dependencias
+node_modules/
+
+# build
+web/dist/
+web/.astro/
+cv/output/
+exports/*.md
+exports/*.txt
+
+# datos personales que no se versionan (ver private/contact.example.yaml)
+private/*.yaml
+!private/*.example.yaml
+
+# sistema
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# editores
+.idea/
+
+# PDFs generados: los reconstruye la CI en cada push
+web/public/cv/

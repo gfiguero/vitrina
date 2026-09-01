@@ -1,0 +1,76 @@
+# Competencias técnicas agrupadas. `featured: true` sube el grupo al sitio.
+groups:
+  - id: languages
+    label: { es: Lenguajes, en: Languages }
+    featured: true
+    items: [Ruby, PHP, Python, JavaScript, TypeScript, Java, .NET, SQL, HTML, CSS]
+  - id: frameworks
+    label: { es: Frameworks, en: Frameworks }
+    featured: true
+    items: [Ruby on Rails, Symfony, CodeIgniter, React, Next.js, Astro, Hotwire, Stimulus, Turbo, Tailwind, Bootstrap, jQuery]
+  - id: mobile
+    label: { es: Desarrollo móvil, en: Mobile }
+    featured: true
+    note:
+      es: >-
+        React Native sobre Expo, para iOS y Android. Arquitectura offline-first, estrategias de
+        sincronización fire-and-forget y conciliación simétrica de datos. Publicación y
+        mantención en App Store y Google Play.
+      en: >-
+        React Native on Expo, for iOS and Android. Offline-first architecture, fire-and-forget
+        sync and symmetric data reconciliation. Shipping and maintaining on the App Store and
+        Google Play.
+    items: [React Native, Expo, offline-first, App Store, Google Play]
+  - id: databases
+    label: { es: Bases de datos, en: Databases }
+    featured: true
+    note:
+      es: "MySQL (incluida versión 8 sobre Amazon RDS), PostgreSQL, DB2. Diseño relacional y consultas avanzadas."
+      en: "MySQL (including 8 on Amazon RDS), PostgreSQL, DB2. Relational design and advanced queries."
+    items: [MySQL, PostgreSQL, SQLite, DB2, Amazon RDS]
+  - id: infra
+    label: { es: Infraestructura y DevOps, en: Infrastructure and DevOps }
+    featured: true
+    items: [AWS EC2, AWS RDS, S3, CloudFront, CloudFormation, Linux (Ubuntu, CentOS), Docker, Kamal, Git, VPS, cloud security]
+  - id: architecture
+    label: { es: Arquitectura e integración, en: Architecture and integration }
+    featured: true
+    note:
+      es: >-
+        Diseño e integración de APIs REST. Dominio a nivel de especificación del protocolo HTTP:
+        semántica de métodos, PATCH y comportamiento de caché.
+      en: >-
+        REST API design and integration. HTTP at specification level: method semantics, PATCH
+        and cache behaviour.
+    items: [REST, HTTP, OAuth2, webhooks, sincronización offline, ingesta IoT]
+  - id: ai
+    label: { es: Inteligencia artificial aplicada, en: Applied AI }
+    featured: true
+    note:
+      es: "Integración de modelos de lenguaje en flujos de trabajo mediante Model Context Protocol (MCP)."
+      en: "Integrating language models into workflows through the Model Context Protocol (MCP)."
+    items: [MCP, LLM tooling]
+  - id: documents
+    label: { es: Documentación digital, en: Digital documents }
+    featured: false
+    note:
+      es: >-
+        Firma electrónica y su validez legal en marcos ESIGN/UETA y equivalentes
+        latinoamericanos; evaluación de soluciones open source de firma documental.
+      en: >-
+        Electronic signature and its legal validity under ESIGN/UETA and Latin American
+        equivalents; evaluation of open source document signing solutions.
+    items: [firma electrónica, PDF, verificación por QR]
+  - id: other
+    label: { es: Otras capacidades, en: Other capabilities }
+    featured: false
+    items:
+      - { es: Ingeniería inversa y reconstrucción de software sin documentación, en: Reverse engineering and reconstruction of undocumented software }
+      - { es: Levantamiento de requerimientos, en: Requirements gathering }
+      - { es: Contenerización de aplicaciones y servicios, en: Containerising applications and services }
+
+languages_spoken:
+  - name: { es: Español, en: Spanish }
+    level: { es: Nativo, en: Native }
+  - name: { es: Inglés, en: English }
+    level: { es: Profesional, en: Professional working proficiency }

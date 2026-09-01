@@ -1,0 +1,141 @@
+# Portfolio. Orden por `weight` descendente. `featured: true` aparece en la portada.
+# `status`: live | archived | wip
+projects:
+  - id: captalog
+    name: Captalog
+    weight: 100
+    featured: true
+    status: live
+    url: https://www.captalog.com
+    repo: null
+    role: { es: Fundador y responsable técnico, en: Founder and technical lead }
+    period: "2024 —"
+    stack: [Ruby on Rails 8, React Native, Expo, MySQL 8, Amazon RDS, EC2, Go, MCP]
+    tags: [saas, offline-first, movil, cumplimiento, ia]
+    summary:
+      es: >-
+        Plataforma offline-first de cumplimiento normativo y seguridad para construcción,
+        minería y energía. Los equipos en terreno ejecutan pautas e inspecciones en faenas sin
+        conectividad; todo sincroniza cuando puede y la traza de auditoría tiene que sostenerse
+        después.
+      en: >-
+        Offline-first platform for safety compliance in construction, mining and energy. Field
+        teams run checklists and inspections on sites with no connectivity; everything syncs
+        when it can, and the audit trail has to hold up afterwards.
+    highlights:
+      - es: >-
+          Monolito Rails que sirve la aplicación web y la API móvil: pautas, inspecciones,
+          tareas, incidencias y dashboards.
+        en: >-
+          Rails monolith serving both the web app and the mobile API: checklists, inspections,
+          tasks, incidents and dashboards.
+      - es: >-
+          App React Native (Expo) offline-first, no "tolerante a desconexión": la base de datos
+          local es la fuente de verdad hasta que la sincronización diga lo contrario.
+        en: >-
+          React Native (Expo) app built offline-first, not offline-tolerant: the local database
+          is the source of truth until sync says otherwise.
+      - es: "CLI en Go con OAuth2 y salida JSON, de modo que la plataforma sea scriptable."
+        en: "Go CLI with OAuth2 and JSON output, so the platform is scriptable."
+      - es: >-
+          Servidor MCP que expone la plataforma a asistentes de IA: crear tareas, editar y
+          publicar pautas, gestionar incidencias y consultar documentación.
+        en: >-
+          MCP server exposing the platform to AI assistants: create tasks, edit and publish
+          checklists, manage issues and query documentation.
+
+  - id: valopes
+    name: Valopes
+    weight: 90
+    featured: true
+    status: live
+    url: https://www.valopes.com
+    repo: null
+    role: { es: Ingeniero de software, en: Software engineer }
+    period: "2024 — 2026"
+    stack: [Ruby on Rails, AWS, CloudFormation, S3, CloudFront, IoT]
+    tags: [saas, sostenibilidad, iot, infraestructura]
+    summary:
+      es: >-
+        Plataforma de medición de huella de carbono y gestión de residuos: ingesta desde
+        dispositivos IoT e infraestructura como código sobre AWS.
+      en: >-
+        Carbon footprint measurement and waste management platform: IoT ingestion and
+        infrastructure as code on AWS.
+    highlights: []
+
+  - id: yuntapp
+    name: Yuntapp
+    weight: 80
+    featured: true
+    status: wip
+    url: null
+    repo: https://github.com/gfiguero/yuntapp
+    role: { es: Autor, en: Author }
+    period: "2026"
+    stack: [Ruby on Rails 8, Docker, Kamal]
+    tags: [civic-tech, sector-publico, documentos]
+    summary:
+      es: >-
+        Digitaliza el certificado de residencia chileno: los vecinos lo solicitan, pagan y
+        descargan en línea mientras la junta de vecinos verifica identidad de forma remota. El
+        PDF lleva código QR y una URL pública de verificación.
+      en: >-
+        Digitises the Chilean certificate of residence: residents request, pay for and download
+        it online while their neighbourhood association verifies identity remotely. The PDF
+        carries a QR code and a public verification URL.
+    highlights: []
+
+  - id: hyprub
+    name: hyprub
+    weight: 60
+    featured: true
+    status: wip
+    url: null
+    repo: https://github.com/gfiguero/hyprub
+    role: { es: Autor, en: Author }
+    period: "2026"
+    stack: [Python, Hyprland, Ubuntu]
+    tags: [linux, herramientas, open-source]
+    summary:
+      es: "Hyprland sobre Ubuntu: port de Omarchy a Ubuntu 26.04, sin Arch ni pacman."
+      en: "Hyprland on Ubuntu: a port of Omarchy to Ubuntu 26.04, without Arch or pacman."
+    highlights: []
+
+  - id: rutaficha
+    name:
+      es: Ficha social — Municipalidad de Quillota
+      en: Social registry — Municipality of Quillota
+    weight: 55
+    featured: true
+    status: archived
+    url: null
+    repo: https://github.com/gfiguero/rutaficha2017
+    role: { es: Jefe de planificación y desarrollador, en: Planning lead and developer }
+    period: "2013 — 2017"
+    stack: [PHP, CodeIgniter, Symfony, MySQL]
+    tags: [sector-publico, social, civic-tech]
+    summary:
+      es: >-
+        Sistema de gestión de solicitudes del registro social y de rutas de visita en terreno
+        para la Dirección de Desarrollo Comunal. Planificación del proyecto y desarrollo.
+      en: >-
+        Management system for social registry requests and field visit routes for the Community
+        Development Department. Project planning and development.
+    highlights: []
+
+  - id: hstool
+    name: hstool
+    weight: 40
+    featured: false
+    status: wip
+    url: null
+    repo: null
+    role: { es: Autor, en: Author }
+    period: "2026"
+    stack: [Python, SQLite, HubSpot API]
+    tags: [herramientas, datos]
+    summary:
+      es: "Espejo local de HubSpot en SQLite para análisis agregado con SQL, con sincronización incremental por watermark."
+      en: "Local HubSpot mirror in SQLite for aggregate SQL analysis, with watermark-based incremental sync."
+    highlights: []

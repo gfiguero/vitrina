@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import Role from '../components/Role.astro';
+import { data, t, roles, paragraphs } from '../../../lib/data.mjs';
+
+const { locale = 'es' } = Astro.props;
+const es = locale === 'es';
+const featuredSkills = data.skills.groups.filter((g) => g.featured);
+---
+<Base locale={locale} page={es ? '/trayectoria' : '/career'} title={es ? 'Trayectoria' : 'Career'}>
+  <p class="eyebrow">{es ? 'Trayectoria' : 'Career'}</p>
+  <h1>{es ? '15+ años construyendo sistemas que tienen que aguantar' : '15+ years building systems that have to hold up'}</h1>
+
+  {paragraphs(t(data.profile.summary, locale)).map((par) => <p class="lead">{par}</p>)}
+
+  <h2>{es ? 'Áreas de especialización' : 'Areas of expertise'}</h2>
+  <ul class="plain">
+    {data.profile.specialties.map((s) => <li class="muted">— {t(s, locale)}</li>)}
+  </ul>
+
+  <h2>{es ? 'Experiencia profesional' : 'Professional experience'}</h2>
+  <p class="note">{t(data.experience.note, locale)}</p>
+  {roles().map((role) => <Role role={role} locale={locale} />)}
+
+  <h2>{es ? 'Competencias técnicas' : 'Technical skills'}</h2>
+  <div class="cols">
+    {featuredSkills.map((g) => (
+      <div>
+        <h3>{t(g.label, locale)}</h3>
+        {g.note && <p class="faint">{t(g.note, locale)}</p>}
+        <ul class="stack">{g.items.map((i) => <li>{t(i, locale)}</li>)}</ul>
+      </div>
+    ))}
+  </div>
+
+  <h2>{es ? 'Educación' : 'Education'}</h2>
+  {data.education.degrees.map((d) => (
+    <article class="entry">
+      <h3>{t(d.title, locale)}</h3>
+      <p class="faint">{t(d.institution, locale)}</p>
+      <ul>{d.highlights.map((h) => <li>{t(h, locale)}</li>)}</ul>
+    </article>
+  ))}
+
+  <h2>{t(data.education.leadership.label, locale)}</h2>
+  <ul>{data.education.leadership.items.map((i) => <li class="muted">{t(i, locale)}</li>)}</ul>
+</Base>

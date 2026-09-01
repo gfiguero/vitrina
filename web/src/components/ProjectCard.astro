@@ -1,0 +1,29 @@
+---
+import { t } from '../../../lib/data.mjs';
+const { project, locale = 'es', detailed = false } = Astro.props;
+const statusLabel = {
+  live: { es: 'En producción', en: 'Live' },
+  wip: { es: 'En desarrollo', en: 'In progress' },
+  archived: { es: 'Archivado', en: 'Archived' },
+}[project.status];
+---
+<article class={detailed ? 'entry' : 'card'}>
+  <div class="entry-head">
+    <h3>{t(project.name, locale)}</h3>
+    <span class="entry-meta">{project.period}</span>
+  </div>
+  <p class="faint">
+    <span class="badge">{t(statusLabel, locale)}</span>
+    {' '}{t(project.role, locale)}
+  </p>
+  <p class="muted">{t(project.summary, locale)}</p>
+  {detailed && project.highlights?.length > 0 && (
+    <ul>{project.highlights.map((h) => <li>{t(h, locale)}</li>)}</ul>
+  )}
+  {project.stack?.length > 0 && <ul class="stack">{project.stack.map((s) => <li>{s}</li>)}</ul>}
+  <p class="faint">
+    {project.url && <a href={project.url}>{new URL(project.url).host}</a>}
+    {project.url && project.repo && ' · '}
+    {project.repo && <a href={project.repo}>{locale === 'es' ? 'Código' : 'Source'}</a>}
+  </p>
+</article>

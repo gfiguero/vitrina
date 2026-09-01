@@ -1,0 +1,115 @@
+# Identidad y posicionamiento. Todo texto bilingüe usa { es, en }.
+name: Garri Figueroa
+handle: gfiguero
+
+headline:
+  es: "Ingeniero de Software · Fullstack e Infraestructura Cloud"
+  en: "Software Engineer · Fullstack and Cloud Infrastructure"
+
+# Una sola frase. Es lo que alguien recuerda de ti si sólo lee una línea.
+tagline:
+  es: >-
+    Construyo software para operaciones donde el terreno está sin conexión, lo que está en
+    juego es físico y el papeleo es una obligación legal.
+  en: >-
+    I build software for operations where the field is offline, the stakes are physical,
+    and the paperwork is a legal obligation.
+
+location:
+  es: "Buin, Región Metropolitana, Chile"
+  en: "Buin, Metropolitan Region, Chile"
+timezone: America/Santiago
+available_remote: true
+
+email: gfiguero@gmail.com
+
+links:
+  - id: github
+    label: GitHub
+    url: https://github.com/gfiguero
+  - id: linkedin
+    label: LinkedIn
+    url: https://www.linkedin.com/in/gfiguero
+  - id: captalog
+    label: Captalog
+    url: https://www.captalog.com
+
+summary:
+  es: >
+    Ingeniero de software con más de 15 años de experiencia en desarrollo fullstack,
+    administración de infraestructura y servicios en la nube. Trayectoria consolidada en
+    proyectos del Estado y de gobiernos locales: desarrollo del sistema de administración de
+    recursos para la ficha social de la Dirección de Desarrollo Comunal de la Municipalidad de
+    Quillota, y participación en proyectos estratégicos para la Comisión Nacional de Seguridad
+    de Tránsito, Carabineros de Chile, el Ministerio de Transportes y Telecomunicaciones, el
+    Ministerio de Salud y el Registro Civil.
+
+    Actualmente soy ingeniero de software, miembro del equipo fundador y socio de CaptaLog,
+    plataforma SaaS de inspecciones en terreno y cumplimiento normativo para industrias
+    pesadas en Latinoamérica. Trabajo cómodo muy por debajo de la capa de aplicación cuando el
+    problema lo exige.
+  en: >
+    Software engineer with 15+ years across fullstack development, infrastructure
+    administration and cloud services. A consolidated track record in national and local
+    government projects: built the resource management system for the social registry at the
+    Community Development Department of the Municipality of Quillota, and worked on strategic
+    projects for Chile's National Road Safety Commission, the national police force, the
+    Ministry of Transport and Telecommunications, the Ministry of Health and the Civil
+    Registry.
+
+    Today I am a software engineer, founding team member and partner at CaptaLog, a SaaS
+    platform for field inspections and regulatory compliance in Latin American heavy industry.
+    I am comfortable well below the application layer when a problem demands it.
+
+# Ejes de especialización: lo que te diferencia, no lo que sabes usar.
+specialties:
+  - es: >-
+      Sistemas de gestión social y atención al vecino: ficha social, registro de beneficiarios
+      y gestión de información para comunidades vecinales.
+    en: >-
+      Social management and citizen-facing systems: social registry, beneficiary records and
+      information management for neighbourhood communities.
+  - es: >-
+      Digitalización de procesos de fiscalización e inspección: pautas de inspección,
+      levantamiento de observaciones en terreno, seguimiento de acciones correctivas y
+      trazabilidad auditable.
+    en: >-
+      Digitising inspection and enforcement processes: inspection checklists, field
+      observations, corrective action tracking and an auditable trail.
+  - es: >-
+      Aplicaciones móviles offline-first para trabajo en terreno: captura de información sin
+      conectividad y sincronización posterior con conciliación de datos, aplicable a sectores
+      rurales o con cobertura deficiente.
+    en: >-
+      Offline-first mobile apps for field work: capture without connectivity and later
+      synchronisation with data reconciliation, applicable to rural or poorly covered areas.
+  - es: >-
+      Gestión ambiental digitalizada: sistemas de cálculo de huella de carbono y de gestión de
+      residuos, aplicables a reportería ambiental municipal y seguimiento de ordenanzas de
+      reciclaje.
+    en: >-
+      Digitised environmental management: carbon footprint and waste management systems,
+      applicable to municipal environmental reporting and recycling compliance.
+  - es: >-
+      Integración entre plataformas y bases de datos de reparticiones públicas, incluyendo
+      entornos legacy sin documentación.
+    en: >-
+      Integration between public sector platforms and databases, including undocumented legacy
+      environments.
+  - es: >-
+      Administración de infraestructura y servicios cloud, con dimensionamiento y control de
+      costos para presupuestos acotados.
+    en: >-
+      Infrastructure and cloud services administration, with sizing and cost control for
+      constrained budgets.
+  - es: >-
+      Modernización de trámites: digitalización documental, firma electrónica y automatización
+      de flujos administrativos.
+    en: >-
+      Modernising bureaucratic procedures: document digitisation, electronic signature and
+      administrative workflow automation.
+  - es: >-
+      Integración de inteligencia artificial en flujos de trabajo internos mediante Model
+      Context Protocol (MCP).
+    en: >-
+      Integrating AI into internal workflows through the Model Context Protocol (MCP).

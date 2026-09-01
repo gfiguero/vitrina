@@ -1,0 +1,16 @@
+---
+import { t, formatPeriod } from '../../../lib/data.mjs';
+const { role, locale = 'es', compact = false } = Astro.props;
+---
+<article class="entry">
+  <div class="entry-head">
+    <h3>{t(role.role, locale)} · {t(role.company, locale)}</h3>
+    <span class="entry-meta">{formatPeriod(role, locale)}</span>
+  </div>
+  {role.stack?.length > 0 && (
+    <ul class="stack">{role.stack.map((s) => <li>{s}</li>)}</ul>
+  )}
+  {!compact && role.highlights?.length > 0 && (
+    <ul>{role.highlights.map((h) => <li>{t(h, locale)}</li>)}</ul>
+  )}
+</article>

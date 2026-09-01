@@ -1,0 +1,21 @@
+{
+  "name": "vitrina",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Fuente de verdad unica del perfil profesional de Garri Figueroa: CV, sitio web, portfolio y exports.",
+  "engines": { "node": ">=22.12.0" },
+  "workspaces": ["web"],
+  "scripts": {
+    "dev": "npm run dev --workspace web",
+    "build": "npm run build --workspace web",
+    "preview": "npm run preview --workspace web",
+    "check": "node scripts/validate-data.mjs",
+    "cv": "node scripts/build-cv.mjs",
+    "exports": "node scripts/build-exports.mjs",
+    "all": "npm run check && npm run build && npm run cv && npm run exports"
+  },
+  "devDependencies": {
+    "yaml": "^2.8.1"
+  }
+}

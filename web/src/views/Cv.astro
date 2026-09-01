@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import { renderCvBody, cvStyles } from '../../../cv/template.mjs';
+import { data } from '../../../lib/data.mjs';
+
+const { locale = 'es' } = Astro.props;
+const es = locale === 'es';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// El PDF se genera con `npm run cv` y se copia a web/public/cv/.
+const pdf = `${base}/cv/${es ? 'cv-garri-figueroa-es.pdf' : 'cv-garri-figueroa-en.pdf'}`;
+const body = renderCvBody({ locale });
+---
+<Base locale={locale} page="/cv" title="CV" description={es ? 'Currículum de Garri Figueroa' : 'Garri Figueroa resume'}>
+  <div class="actions no-print" style="margin-top:0">
+    <a class="btn btn-primary" href={pdf} download>{es ? 'Descargar PDF' : 'Download PDF'}</a>
+    <a class="btn" href={`mailto:${data.profile.email}`}>{es ? 'Escríbeme' : 'Get in touch'}</a>
+  </div>
+  <div set:html={body} />
+  <style is:global set:html={cvStyles()}></style>
+</Base>

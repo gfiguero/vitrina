@@ -1,0 +1,52 @@
+/* Hoja de estilo del CV. La usan la página /cv del sitio y el PDF generado.
+   Medida base pensada para A4 con márgenes de 14mm. */
+.cv {
+  --cv-ink: #1a1a1a;
+  --cv-soft: #4d4d4d;
+  --cv-faint: #767676;
+  --cv-line: #d8d4cd;
+  --cv-accent: #8a4b2a;
+  font-family: "Iowan Old Style", Palatino, Georgia, serif;
+  font-size: 9.6pt;
+  line-height: 1.42;
+  color: var(--cv-ink);
+  max-width: 46rem;
+  margin: 0 auto;
+}
+.cv h1, .cv h2, .cv h3 { margin: 0; font-weight: 600; }
+.cv a { color: inherit; text-decoration: none; }
+
+.cv-head { text-align: center; border-bottom: 1.5pt solid var(--cv-ink); padding-bottom: .5rem; margin-bottom: .9rem; }
+.cv-head h1 { font-size: 19pt; letter-spacing: .01em; }
+.cv-head .cv-role { font-size: 10.5pt; color: var(--cv-soft); margin: .15rem 0 .3rem; }
+.cv-head .cv-contact { font-size: 8.6pt; color: var(--cv-faint); }
+
+.cv-section { margin-top: .85rem; break-inside: auto; }
+.cv-section > h2 {
+  font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+  font-size: 8.4pt; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--cv-accent); border-bottom: .5pt solid var(--cv-line);
+  padding-bottom: .12rem; margin-bottom: .4rem;
+}
+.cv p { margin: 0 0 .4rem; text-align: justify; hyphens: auto; }
+.cv ul { margin: .18rem 0 .1rem; padding-left: .95rem; }
+.cv li { margin: .1rem 0; text-align: justify; hyphens: auto; }
+.cv li::marker { color: var(--cv-faint); }
+
+.cv-job { margin-bottom: .5rem; break-inside: avoid; }
+.cv-job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.cv-job-head h3 { font-size: 10pt; }
+.cv-job-head .cv-when { font-size: 8.4pt; color: var(--cv-faint); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.cv-stack { font-size: 8.2pt; color: var(--cv-faint); font-style: italic; margin: 0 0 .12rem; }
+
+.cv-note { font-size: 8.6pt; color: var(--cv-faint); font-style: italic; margin-bottom: .5rem; }
+.cv-skill { margin: 0 0 .18rem; }
+.cv-skill b { font-weight: 600; }
+.cv-inline { display: flex; flex-wrap: wrap; gap: .1rem .55rem; font-size: 9pt; list-style: none; padding: 0; margin: .1rem 0; }
+
+@media print {
+  @page { size: A4; margin: 14mm 14mm 12mm; }
+  html, body { background: #fff !important; margin: 0; padding: 0; }
+  .cv { max-width: none; }
+  .no-print { display: none !important; }
+}

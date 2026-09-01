@@ -70,7 +70,7 @@ projects:
     featured: true
     status: wip
     url: null
-    repo: https://github.com/gfiguero/yuntapp
+    repo: null  # el repositorio es privado
     role: { es: Autor, en: Author }
     period: "2026"
     stack: [Ruby on Rails 8, Docker, Kamal]

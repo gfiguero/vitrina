@@ -13,7 +13,8 @@
     "check": "node scripts/validate-data.mjs",
     "cv": "node scripts/build-cv.mjs",
     "exports": "node scripts/build-exports.mjs",
-    "all": "npm run check && npm run build && npm run cv && npm run exports"
+    "og": "node scripts/build-og.mjs",
+    "all": "npm run check && npm run cv && npm run og && npm run exports && npm run build"
   },
   "devDependencies": {
     "yaml": "^2.8.1"

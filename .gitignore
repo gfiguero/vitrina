@@ -22,5 +22,6 @@ private/*.yaml
 # editores
 .idea/
 
-# PDFs generados: los reconstruye la CI en cada push
+# Artefactos generados: los reconstruye la CI en cada push
 web/public/cv/
+web/public/og.png

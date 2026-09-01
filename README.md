@@ -39,6 +39,7 @@ npm run dev        # sitio en local con recarga en caliente
 npm run check      # valida que no falte ninguna traducción ni campo obligatorio
 npm run cv         # genera cv/output/*.pdf (ES y EN) con Chrome headless
 npm run exports    # genera exports/ para LinkedIn, GitHub y formularios ATS
+npm run og         # genera la imagen que se muestra al compartir el enlace
 npm run build      # sitio estático en web/dist
 npm run all        # todo lo anterior, en orden
 ```
@@ -69,12 +70,16 @@ Secciones disponibles: `profile`, `specialties`, `experience`, `skills`, `openso
 Cada push a `main` dispara `.github/workflows/deploy.yml`: valida los datos, genera los PDF,
 construye el sitio y lo publica en GitHub Pages. Si la validación falla, no se publica nada.
 
+El sitio incluye `sitemap-index.xml`, `robots.txt`, `hreflang` entre las versiones ES/EN y datos
+estructurados `schema.org/Person`, para que los buscadores asocien correctamente las páginas a
+una misma persona. La imagen de `og.png` se regenera desde `data/`: si cambias el titular o la
+frase de presentación, cambia también lo que ve quien recibe el enlace.
+
 Para usar un dominio propio: agrega el `CNAME` en `web/public/`, y construye con
 `SITE_URL=https://tudominio.cl SITE_BASE=/ npm run build`.
 
 ## Al día
 
 - [ ] Rellenar `projects.yaml` con métricas concretas (usuarios, volumen, tiempos)
-- [ ] Foto y Open Graph propio para compartir en redes
 - [ ] Sección de escritura o notas técnicas
 - [ ] Dominio propio

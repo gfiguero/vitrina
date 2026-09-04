@@ -1,5 +1,5 @@
 /* Hoja de estilo del CV. La usan la página /cv del sitio y el PDF generado.
-   Medida base pensada para A4 con márgenes de 14mm. */
+   Medida base pensada para tamaño carta con márgenes de 14mm. */
 .cv {
   --cv-ink: #1a1a1a;
   --cv-soft: #4d4d4d;
@@ -46,10 +46,23 @@
 .cv-inline { display: flex; flex-wrap: wrap; gap: .1rem .55rem; font-size: 9pt; list-style: none; padding: 0; margin: .1rem 0; }
 
 @media print {
-  @page { size: A4; margin: 14mm 14mm 12mm; }
+  @page { size: Letter; margin: 14mm 14mm 12mm; }
   html, body { background: #fff !important; margin: 0; padding: 0; }
   .cv { max-width: none; }
   .no-print { display: none !important; }
+
+  /* Un encabezado nunca se queda solo al pie de una página: arrastra consigo lo que
+     introduce. Sin esto, "Experiencia profesional" cerraba una página y el primer cargo
+     abría la siguiente. */
+  .cv-section > h2, .cv-note, .cv-job-head { break-after: avoid; }
+
+  /* Un cargo, una competencia o una viñeta no se parten a la mitad de una frase. Cuando el
+     bloque es más alto que la página el navegador ignora la regla y corta igual, que es el
+     comportamiento correcto. */
+  .cv-job, .cv-skill, .cv-note, .cv li { break-inside: avoid; }
+
+  /* Y si algo debe cortarse, nunca por una sola línea suelta. */
+  .cv p, .cv li { orphans: 2; widows: 2; }
 }
 
 /* Vista web: el CV se presenta sobre una hoja blanca, independiente del tema del sitio.

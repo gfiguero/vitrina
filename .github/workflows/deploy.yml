@@ -20,33 +20,37 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Debe ir antes de setup-node para que `cache: pnpm` encuentre el store.
+      # La versión sale del campo `packageManager` de package.json.
+      - uses: pnpm/action-setup@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: pnpm
 
-      - run: npm ci
+      - run: pnpm install --frozen-lockfile
 
       # Falla temprano si falta una traducción o un campo obligatorio.
       - name: Validar datos
-        run: npm run check
+        run: pnpm run check
 
       # Chrome ya viene instalado en los runners de ubuntu-latest.
       - name: Generar CV en PDF
-        run: npm run cv
+        run: pnpm run cv
         env:
           CHROME_PATH: /usr/bin/google-chrome
 
       - name: Generar imagen para compartir
-        run: npm run og
+        run: pnpm run og
         env:
           CHROME_PATH: /usr/bin/google-chrome
 
       - name: Generar exports
-        run: npm run exports
+        run: pnpm run exports
 
       - name: Construir sitio
-        run: npm run build
+        run: pnpm run build
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

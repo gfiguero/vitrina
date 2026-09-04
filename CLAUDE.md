@@ -10,7 +10,7 @@ si un dato hace falta, se agrega al YAML y se consume con `t()` desde `lib/data.
 
 ## Bilingüismo
 
-Cada campo de texto visible es `{ es, en }`. `npm run check` falla si falta una traducción, así
+Cada campo de texto visible es `{ es, en }`. `pnpm run check` falla si falta una traducción, así
 que no se puede publicar contenido a medio traducir. Un string plano equivale a "igual en ambos
 idiomas" y sólo debe usarse para nombres propios y tecnologías.
 
@@ -41,5 +41,5 @@ está en `.gitignore`. El repositorio es público.
 ## Antes de dar algo por terminado
 
 ```bash
-npm run all
+pnpm run all
 ```

@@ -33,15 +33,15 @@ página `/cv` del sitio y para el PDF, así que ambos no pueden divergir.
 ## Uso
 
 ```bash
-npm install
+pnpm install
 
-npm run dev        # sitio en local con recarga en caliente
-npm run check      # valida que no falte ninguna traducción ni campo obligatorio
-npm run cv         # genera cv/output/*.pdf (ES y EN) con Chrome headless
-npm run exports    # genera exports/ para LinkedIn, GitHub y formularios ATS
-npm run og         # genera la imagen que se muestra al compartir el enlace
-npm run build      # sitio estático en web/dist
-npm run all        # todo lo anterior, en orden
+pnpm run dev        # sitio en local con recarga en caliente
+pnpm run check      # valida que no falte ninguna traducción ni campo obligatorio
+pnpm run cv         # genera cv/output/*.pdf (ES y EN) con Chrome headless
+pnpm run exports    # genera exports/ para LinkedIn, GitHub y formularios ATS
+pnpm run og         # genera la imagen que se muestra al compartir el enlace
+pnpm run build      # sitio estático en web/dist
+pnpm run all        # todo lo anterior, en orden
 ```
 
 ### Datos privados
@@ -51,7 +51,7 @@ destinado a una postulación concreta:
 
 ```bash
 cp private/contact.example.yaml private/contact.yaml   # completar
-npm run cv -- --private
+pnpm run cv -- --private
 ```
 
 El PDF resultante queda sólo en `cv/output/` y no se copia al sitio.
@@ -59,7 +59,7 @@ El PDF resultante queda sólo en `cv/output/` y no se copia al sitio.
 ### CV recortado para una postulación
 
 ```bash
-npm run cv -- --locale es --sections profile,experience,skills
+pnpm run cv -- --locale es --sections profile,experience,skills
 ```
 
 Secciones disponibles: `profile`, `specialties`, `experience`, `skills`, `opensource`,
@@ -76,7 +76,7 @@ una misma persona. La imagen de `og.png` se regenera desde `data/`: si cambias e
 frase de presentación, cambia también lo que ve quien recibe el enlace.
 
 Para usar un dominio propio: agrega el `CNAME` en `web/public/`, y construye con
-`SITE_URL=https://tudominio.cl SITE_BASE=/ npm run build`.
+`SITE_URL=https://tudominio.cl SITE_BASE=/ pnpm run build`.
 
 ## Al día
 

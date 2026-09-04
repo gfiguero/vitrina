@@ -1,0 +1,6 @@
+packages:
+  - web
+
+# Astro necesita el postinstall de esbuild; pnpm bloquea build scripts por defecto.
+allowBuilds:
+  esbuild: true

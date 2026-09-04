@@ -44,7 +44,7 @@ summary:
     de Tránsito, Carabineros de Chile, el Ministerio de Transportes y Telecomunicaciones, el
     Ministerio de Salud y el Registro Civil.
 
-    Actualmente soy ingeniero de software, miembro del equipo fundador y socio de CaptaLog,
+    Actualmente soy ingeniero de software y miembro del equipo fundador de CaptaLog,
     plataforma SaaS de inspecciones en terreno y cumplimiento normativo para industrias
     pesadas en Latinoamérica. Trabajo cómodo muy por debajo de la capa de aplicación cuando el
     problema lo exige.
@@ -57,7 +57,7 @@ summary:
     Ministry of Transport and Telecommunications, the Ministry of Health and the Civil
     Registry.
 
-    Today I am a software engineer, founding team member and partner at CaptaLog, a SaaS
+    Today I am a software engineer and founding team member at CaptaLog, a SaaS
     platform for field inspections and regulatory compliance in Latin American heavy industry.
     I am comfortable well below the application layer when a problem demands it.
 
@@ -113,3 +113,100 @@ specialties:
       Context Protocol (MCP).
     en: >-
       Integrating AI into internal workflows through the Model Context Protocol (MCP).
+
+# Variantes de posicionamiento para una postulación concreta. Sólo afectan al CV generado
+# (`npm run cv -- --variant <id>`); el sitio siempre publica el perfil por defecto.
+# Una variante reescribe headline, tagline, summary y specialties: el mismo recorrido contado
+# para otra audiencia. La experiencia, las competencias y la educación no cambian nunca.
+variants:
+  corporate:
+    label:
+      es: "Producto digital corporativo e IA aplicada"
+      en: "Corporate digital product and applied AI"
+
+    headline:
+      es: "Ingeniero de Software Fullstack · Producto Digital e IA Aplicada"
+      en: "Fullstack Software Engineer · Digital Product and Applied AI"
+
+    tagline:
+      es: >-
+        Llevo producto digital de punta a punta —web, móvil y las integraciones que los
+        conectan— y trabajo dentro del loop de desarrollo agéntico, con el criterio técnico
+        siempre del lado humano.
+      en: >-
+        I take digital product end to end — web, mobile and the integrations between them — and
+        work inside the agentic development loop, with technical judgement always on the human
+        side.
+
+    summary:
+      es: >
+        Ingeniero de software fullstack con más de 15 años construyendo y sosteniendo productos
+        digitales en producción: aplicaciones web, aplicaciones móviles para iOS y Android, y las
+        APIs e integraciones que las conectan. Cubro el ciclo completo, desde el levantamiento y
+        la arquitectura hasta las pruebas, el despliegue y la operación, y decido sobre
+        infraestructura cloud considerando costo y límite de escalabilidad, no sólo capacidad
+        técnica.
+
+        Uso inteligencia artificial generativa como parte del trabajo diario en los dos sentidos:
+        desarrollo asistido por agentes bajo revisión humana, y construcción de servidores MCP
+        que exponen una plataforma a asistentes de IA con su modelo de dominio y sus permisos. Me
+        interesa particularmente tomar prototipos que ya demuestran una idea y llevarlos a
+        soluciones que aguanten producción, con seguridad, pruebas y observabilidad.
+      en: >
+        Fullstack software engineer with 15+ years building and sustaining digital products in
+        production: web applications, iOS and Android mobile apps, and the APIs and integrations
+        that connect them. I cover the full cycle, from requirements and architecture through
+        testing, deployment and operation, and I make cloud infrastructure decisions on cost and
+        scalability limits, not only technical capability.
+
+        I use generative AI as part of the daily work in both directions: agent-assisted
+        development under human review, and building MCP servers that expose a platform to AI
+        assistants with its domain model and its permissions. I am particularly interested in
+        taking prototypes that already prove an idea and evolving them into solutions that hold
+        up in production, with security, testing and observability.
+
+    specialties:
+      - es: >-
+          Desarrollo fullstack web y móvil sobre una misma base de producto: TypeScript en el
+          cliente, con React Native en producción y React, Next.js y Astro en web; APIs REST y
+          bases de datos relacionales en el servidor.
+        en: >-
+          Fullstack web and mobile development on a single product base: TypeScript on the
+          client, with React Native in production and React, Next.js and Astro on the web; REST
+          APIs and relational databases on the server.
+      - es: >-
+          Diseño de integraciones entre sistemas mediante contratos versionados, de modo que una
+          divergencia entre dos lados aparezca en integración continua y no en producción.
+        en: >-
+          Designing system integrations through versioned contracts, so divergence between two
+          sides surfaces in CI rather than in production.
+      - es: >-
+          Prácticas de calidad sostenidas: pruebas unitarias, de integración y de sistema,
+          cobertura medida, análisis estático de seguridad y observabilidad en producción.
+        en: >-
+          Sustained quality practice: unit, integration and system tests, measured coverage,
+          static security analysis and production observability.
+      - es: >-
+          Desarrollo asistido por agentes de IA con supervisión humana, y construcción de
+          servidores MCP para integrar asistentes en flujos de trabajo internos.
+        en: >-
+          Agent-assisted development under human supervision, and building MCP servers to
+          integrate assistants into internal workflows.
+      - es: >-
+          Evolución de prototipos y pruebas de concepto hacia soluciones mantenibles y
+          desplegadas, identificando brechas de seguridad y límites de escalabilidad.
+        en: >-
+          Evolving prototypes and proofs of concept into maintainable, deployed solutions,
+          identifying security gaps and scalability limits.
+      - es: >-
+          Administración de infraestructura y servicios cloud, con dimensionamiento y control de
+          costos para presupuestos acotados.
+        en: >-
+          Infrastructure and cloud services administration, with sizing and cost control for
+          constrained budgets.
+      - es: >-
+          Trabajo en equipos multidisciplinarios y sobre sistemas heredados sin documentación,
+          incluyendo integración entre plataformas de distintas organizaciones.
+        en: >-
+          Working in cross-functional teams and on undocumented legacy systems, including
+          integration between platforms from different organisations.

@@ -3,11 +3,20 @@ groups:
   - id: languages
     label: { es: Lenguajes, en: Languages }
     featured: true
-    items: [Ruby, PHP, Python, JavaScript, TypeScript, Java, .NET, SQL, HTML, CSS]
+    items: [TypeScript, JavaScript, Ruby, PHP, Python, SQL, Java, .NET, HTML, CSS]
   - id: frameworks
-    label: { es: Frameworks, en: Frameworks }
+    label: { es: Frameworks y entornos, en: Frameworks and runtimes }
     featured: true
-    items: [Ruby on Rails, Symfony, CodeIgniter, React, Next.js, Astro, Hotwire, Stimulus, Turbo, Tailwind, Bootstrap, jQuery]
+    note:
+      es: >-
+        Node.js como entorno de ejecución habitual del trabajo en JavaScript y TypeScript:
+        tooling de build, scripts de línea de comandos y suites de pruebas. En web, desarrollo
+        de interfaces propias con React, Next.js y Astro.
+      en: >-
+        Node.js as the everyday runtime for JavaScript and TypeScript work: build tooling,
+        command line scripts and test suites. On the web, building my own interfaces with
+        React, Next.js and Astro.
+    items: [Node.js, React, Next.js, Astro, Ruby on Rails, Symfony, CodeIgniter, Hotwire, Stimulus, Turbo, Tailwind, Bootstrap, jQuery]
   - id: mobile
     label: { es: Desarrollo móvil, en: Mobile }
     featured: true
@@ -20,7 +29,7 @@ groups:
         React Native on Expo, for iOS and Android. Offline-first architecture, fire-and-forget
         sync and symmetric data reconciliation. Shipping and maintaining on the App Store and
         Google Play.
-    items: [React Native, Expo, offline-first, App Store, Google Play]
+    items: [React Native, Expo, Expo Router, TypeScript, Zustand, Drizzle ORM, SQLite, NativeWind, offline-first, App Store, Google Play]
   - id: databases
     label: { es: Bases de datos, en: Databases }
     featured: true
@@ -43,13 +52,39 @@ groups:
         REST API design and integration. HTTP at specification level: method semantics, PATCH
         and cache behaviour.
     items: [REST, HTTP, OAuth2, webhooks, sincronización offline, ingesta IoT]
+  - id: quality
+    label: { es: Calidad, pruebas y observabilidad, en: Quality, testing and observability }
+    featured: true
+    note:
+      es: >-
+        Jest con suites unitarias y de integración separadas, Testing Library, Minitest y
+        Capybara para pruebas de sistema, cobertura medida con SimpleCov. Análisis estático de
+        seguridad con Brakeman y eslint-plugin-security; RuboCop, ESLint y Prettier ejecutados
+        en cada commit. Observabilidad en producción con Sentry.
+      en: >-
+        Jest with separate unit and integration suites, Testing Library, Minitest and Capybara
+        for system tests, coverage measured with SimpleCov. Static security analysis with
+        Brakeman and eslint-plugin-security; RuboCop, ESLint and Prettier on every commit.
+        Production observability with Sentry.
+    items: [Jest, Testing Library, Minitest, Capybara, SimpleCov, Brakeman, ESLint, RuboCop, Sentry]
+
   - id: ai
     label: { es: Inteligencia artificial aplicada, en: Applied AI }
     featured: true
     note:
-      es: "Integración de modelos de lenguaje en flujos de trabajo mediante Model Context Protocol (MCP)."
-      en: "Integrating language models into workflows through the Model Context Protocol (MCP)."
-    items: [MCP, LLM tooling]
+      es: >-
+        Dos frentes. Construir para la IA: servidores MCP propios que exponen una plataforma a
+        asistentes, con su modelo de dominio y sus permisos. Y desarrollar con ella: Claude Code
+        y opencode como entorno agnóstico de modelo, modelos locales vía Ollama cuando el código
+        no puede salir de la máquina, y un flujo de trabajo agéntico con un worktree por tarea y
+        revisión humana antes de integrar.
+      en: >-
+        Two fronts. Building for AI: in-house MCP servers exposing a platform to assistants,
+        with its domain model and its permissions. And building with it: Claude Code and
+        opencode as a model-agnostic harness, local models through Ollama when the code cannot
+        leave the machine, and an agentic workflow with one worktree per task and human review
+        before merging.
+    items: [MCP, Claude Code, opencode, Ollama, modelos locales, LLM tooling]
   - id: documents
     label: { es: Documentación digital, en: Digital documents }
     featured: false
@@ -68,6 +103,12 @@ groups:
       - { es: Ingeniería inversa y reconstrucción de software sin documentación, en: Reverse engineering and reconstruction of undocumented software }
       - { es: Levantamiento de requerimientos, en: Requirements gathering }
       - { es: Contenerización de aplicaciones y servicios, en: Containerising applications and services }
+      - es: >-
+          Automatización en Python: herramientas de línea de comandos, sincronización incremental
+          contra APIs externas y análisis de datos sobre SQLite.
+        en: >-
+          Automation in Python: command line tools, incremental synchronisation against external
+          APIs and data analysis over SQLite.
 
 languages_spoken:
   - name: { es: Español, en: Spanish }

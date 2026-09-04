@@ -16,20 +16,19 @@ roles:
   - company: CaptaLog
     url: https://www.captalog.com
     role:
-      es: "Ingeniero de Software · Equipo Fundador y Socio"
-      en: "Software Engineer · Founding Team Member and Partner"
+      es: "Ingeniero de Software · Equipo Fundador"
+      en: "Software Engineer · Founding Team Member"
     start: 2024-12
     end: null
     current: true
-    stack: [Ruby on Rails 8, MySQL 8, Amazon RDS, Amazon EC2, React Native, Expo, MCP]
-    tags: [saas, movil, offline-first, fundador, ia, producto]
+    stack: [Ruby on Rails 8, MySQL 8, Amazon RDS, Amazon EC2, React Native, Expo, TypeScript, SQLite, MCP]
+    tags: [saas, movil, offline-first, fundador, ia, producto, calidad]
     highlights:
       - es: >-
-          Miembro del equipo fundador y socio de la empresa, con participación en las decisiones
-          de producto, técnicas y de negocio.
+          Miembro del equipo fundador, con participación en las decisiones de producto,
+          técnicas y de negocio.
         en: >-
-          Founding team member and partner, involved in product, technical and business
-          decisions.
+          Founding team member, involved in product, technical and business decisions.
       - es: >-
           Diseño y desarrollo desde cero de la aplicación móvil con arquitectura offline-first,
           en React Native sobre Expo, para iOS y Android. Más de un año de desarrollo continuo;
@@ -48,11 +47,32 @@ roles:
           the device plus a symmetric reconciliation pass, so field data is captured without
           connectivity and device/server divergence is resolved without data loss.
       - es: >-
+          Integración entre la aplicación móvil y la plataforma web mediante contratos de
+          sincronización versionados: el backend genera y publica el contrato de cada payload y
+          la app lo consume como fixture, de modo que sus pruebas de transformación fallan
+          cuando el contrato se mueve. Una divergencia entre ambos lados aparece en integración
+          continua y no en terreno.
+        en: >-
+          Integrated the mobile app and the web platform through versioned sync contracts: the
+          backend generates and publishes the contract for every payload and the app consumes it
+          as a fixture, so its transformation tests fail when the contract moves. Divergence
+          between the two sides surfaces in CI instead of in the field.
+      - es: >-
           Desarrollo fullstack de la plataforma web, incluyendo el motor de pautas de inspección
           con múltiples tipos de pregunta y estructuras anidadas.
         en: >-
           Fullstack development of the web platform, including the inspection checklist engine
           with multiple question types and nested structures.
+      - es: >-
+          Instalación de la práctica de pruebas en ambos repositorios: suites unitarias y de
+          integración separadas en la aplicación móvil, y pruebas unitarias, de integración y de
+          sistema con cobertura medida en la plataforma web. Linting, formateo y análisis
+          estático de seguridad se ejecutan en cada commit.
+        en: >-
+          Established the testing practice across both repositories: separate unit and
+          integration suites on the mobile app, and unit, integration and system tests with
+          measured coverage on the web platform. Linting, formatting and static security
+          analysis run on every commit.
       - es: >-
           Diseño y construcción de la integración MCP, que expone la plataforma a asistentes de
           inteligencia artificial para creación de tareas, edición y publicación de pautas,
@@ -62,11 +82,24 @@ roles:
           task creation, checklist editing and publishing, issue management and document
           lookup.
       - es: >-
-          Detección, documentación y resolución de fallas en producción, incluyendo errores de
-          validación silenciosa que provocaban fallos completos de renderizado en el editor.
+          Desarrollo asistido por agentes como flujo de trabajo habitual: un worktree aislado por
+          tarea, agentes que implementan y revisan contra convenciones escritas del repositorio,
+          y un servidor MCP propio que les da acceso al dominio de la plataforma. El criterio
+          técnico, la revisión y la decisión de integrar siguen siendo humanos.
         en: >-
-          Detected, documented and resolved production failures, including silent validation
-          errors that caused complete rendering failures in the editor.
+          Agent-assisted development as the standard workflow: one isolated worktree per task,
+          agents implementing and reviewing against written repository conventions, and an
+          in-house MCP server giving them access to the platform domain. Technical judgement,
+          review and the decision to merge stay human.
+      - es: >-
+          Instrumentación de observabilidad en producción y resolución de fallas sobre
+          dispositivos en terreno, donde el error rara vez se reproduce en el escritorio;
+          incluyendo errores de validación silenciosa que provocaban fallos completos de
+          renderizado en el editor.
+        en: >-
+          Production observability instrumentation and failure resolution on field devices,
+          where the error rarely reproduces on a desk; including silent validation errors that
+          caused complete rendering failures in the editor.
       - es: >-
           Análisis competitivo del mercado de software de inspección en terreno como insumo para
           decisiones de producto.

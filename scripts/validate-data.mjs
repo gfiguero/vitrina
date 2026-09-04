@@ -26,6 +26,24 @@ bilingual(p.tagline, 'profile.tagline');
 bilingual(p.location, 'profile.location');
 bilingual(p.summary, 'profile.summary');
 p.specialties.forEach((s, i) => bilingual(s, `profile.specialties[${i}]`));
+// Una variante sólo reescribe el posicionamiento, y lo que reescriba debe venir bilingüe.
+const VARIANT_FIELDS = ['headline', 'tagline', 'summary'];
+for (const [id, v] of Object.entries(p.variants ?? {})) {
+  const where = `profile.variants.${id}`;
+  bilingual(v.label, `${where}.label`);
+  const overrides = Object.keys(v).filter((k) => k !== 'label');
+  if (!overrides.length) errors.push(`${where}: no reescribe ningún campo`);
+  for (const field of overrides) {
+    if (![...VARIANT_FIELDS, 'specialties'].includes(field)) {
+      errors.push(`${where}.${field}: una variante sólo puede reescribir ${VARIANT_FIELDS.join(', ')} o specialties`);
+    }
+  }
+  for (const field of VARIANT_FIELDS) {
+    if (v[field] != null) bilingual(v[field], `${where}.${field}`);
+  }
+  v.specialties?.forEach((sp, i) => bilingual(sp, `${where}.specialties[${i}]`));
+}
+
 p.links.forEach((l, i) => {
   if (!/^https?:\/\//.test(l.url ?? '')) errors.push(`profile.links[${i}].url: no es una URL absoluta`);
 });
@@ -68,4 +86,5 @@ if (errors.length) {
   console.error(`\n${errors.length} error(es) en data/.`);
   process.exit(1);
 }
-console.log(`✓ Datos válidos: ${data.experience.roles.length} cargos, ${data.projects.projects.length} proyectos, ${data.skills.groups.length} grupos de competencias.`);
+const nVariants = Object.keys(p.variants ?? {}).length;
+console.log(`✓ Datos válidos: ${data.experience.roles.length} cargos, ${data.projects.projects.length} proyectos, ${data.skills.groups.length} grupos de competencias, ${nVariants} variante(s) de perfil.`);

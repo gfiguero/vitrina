@@ -42,6 +42,7 @@
 .cv-note { font-size: 8.6pt; color: var(--cv-faint); font-style: italic; margin-bottom: .5rem; }
 .cv-skill { margin: 0 0 .18rem; }
 .cv-skill b { font-weight: 600; }
+.cv-keywords { font-size: 8.4pt; color: var(--cv-faint); }
 .cv-inline { display: flex; flex-wrap: wrap; gap: .1rem .55rem; font-size: 9pt; list-style: none; padding: 0; margin: .1rem 0; }
 
 @media print {

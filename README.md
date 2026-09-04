@@ -65,6 +65,21 @@ pnpm run cv -- --locale es --sections profile,experience,skills
 Secciones disponibles: `profile`, `specialties`, `experience`, `skills`, `opensource`,
 `education`.
 
+### CV con otro posicionamiento
+
+El mismo recorrido no se cuenta igual a una minera que a un retail corporativo. `data/profile.yaml`
+admite `variants:`, y cada variante reescribe sólo el posicionamiento —titular, frase, resumen y
+áreas de especialización—; la experiencia, las competencias y la educación nunca cambian, porque
+esas son hechos y no encuadre.
+
+```bash
+pnpm run cv -- --variant corporate
+```
+
+El PDF sale como `cv-garri-figueroa-{es,en}-corporate.pdf` y **no** se copia al sitio: una variante
+existe para una postulación concreta, igual que `--private`. El sitio publica siempre el perfil por
+defecto.
+
 ## Publicación
 
 Cada push a `main` dispara `.github/workflows/deploy.yml`: valida los datos, genera los PDF,

@@ -27,6 +27,17 @@ escalar de bloque, o el YAML no parsea.
 `/cv` del sitio como el PDF. Si cambias la estructura del CV, cambia ahí y ambos salen iguales.
 El PDF se genera con el Chrome del sistema (`scripts/build-cv.mjs`), sin dependencias.
 
+## Variantes de perfil
+
+`data/profile.yaml` puede declarar `variants:`. Una variante reescribe **sólo** `headline`,
+`tagline`, `summary` y `specialties`, y se resuelve con `profileFor(id)` en `lib/data.mjs`. No
+inventes campos nuevos ahí: el validador rechaza cualquier otra clave, porque una variante es un
+encuadre distinto del mismo recorrido, no un currículum paralelo. La experiencia y las
+competencias son las mismas para todos.
+
+Las variantes sólo afectan al CV generado (`pnpm run cv -- --variant <id>`), nunca al sitio ni a
+los exports.
+
 ## Rutas
 
 `lib/data.mjs` resuelve la raíz del proyecto buscando `data/profile.yaml` hacia arriba, porque

@@ -1,7 +1,7 @@
 // Renderizador único del CV: produce el mismo HTML para la web y para el PDF.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, data, t, formatPeriod, roles, paragraphs } from '../lib/data.mjs';
+import { ROOT, data, t, formatPeriod, roles, paragraphs, profileFor } from '../lib/data.mjs';
 
 export const cvStyles = () => readFileSync(join(ROOT, 'cv/style.css'), 'utf8');
 
@@ -25,10 +25,10 @@ const L = {
 
 /**
  * Devuelve el <div class="cv"> completo.
- * @param {{ locale?: 'es'|'en', contact?: object|null, sections?: string[] }} opts
+ * @param {{ locale?: 'es'|'en', contact?: object|null, sections?: string[], variant?: string }} opts
  */
-export function renderCvBody({ locale = 'es', contact = null, sections } = {}) {
-  const p = data.profile;
+export function renderCvBody({ locale = 'es', contact = null, sections, variant = null } = {}) {
+  const p = profileFor(variant);
   const l = L[locale];
   const want = (id) => !sections || sections.includes(id);
 
@@ -75,9 +75,19 @@ export function renderCvBody({ locale = 'es', contact = null, sections } = {}) {
 
   if (want('skills')) {
     const rows = data.skills.groups.map((g) => {
-      const body = g.note ? t(g.note, locale)
-        : g.items.map((i) => t(i, locale)).join(', ');
-      return `<p class="cv-skill"><b>${esc(t(g.label, locale))}:</b> ${esc(body)}</p>`;
+      const note = g.note ? t(g.note, locale) : '';
+      // Una nota explica; los items son palabras clave para lectores automáticos. Se anexan
+      // sólo los que la nota no nombra ya, para no repetir, y en tono secundario para que no
+      // se lean como continuación de la frase.
+      const keywords = (g.items ?? []).map((i) => t(i, locale))
+        .filter((k) => !note.toLowerCase().includes(k.toLowerCase()));
+      const parts = [note && esc(note)];
+      if (keywords.length) {
+        parts.push(note
+          ? `<span class="cv-keywords">${esc(keywords.join(' · '))}</span>`
+          : esc(keywords.join(', ')));
+      }
+      return `<p class="cv-skill"><b>${esc(t(g.label, locale))}:</b> ${parts.filter(Boolean).join(' ')}</p>`;
     }).join('');
     out.push(`<section class="cv-section"><h2>${l.skills}</h2>${rows}</section>`);
   }

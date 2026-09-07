@@ -233,6 +233,7 @@ roles:
     end: 2015
     stack: [CodeIgniter, Symfony, HTML, VPS]
     tags: [sector-publico, social, liderazgo]
+    condensed: true
     highlights:
       - es: >-
           Planificación y desarrollo del sistema de administración de recursos para la ficha
@@ -251,6 +252,7 @@ roles:
     end: 2015
     stack: [PHP, HTML, Java, JavaScript]
     tags: [infraestructura, open-source]
+    condensed: true
     highlights:
       - es: >-
           Administración de servidores de cámaras de vigilancia; modificación de código y
@@ -267,6 +269,7 @@ roles:
     end: 2014
     stack: [PHP, HTML, JavaScript]
     tags: [datos, retail]
+    condensed: true
     highlights:
       - es: >-
           Desarrollo y mantención de sistemas de gestión interna para Cencosud: generación de
@@ -285,6 +288,7 @@ roles:
     end: 2011
     stack: [PHP, HTML, JavaScript]
     tags: [investigacion, legacy]
+    condensed: true
     highlights:
       - es: >-
           Administración de recursos para proyectos de investigación, sobre software existente
@@ -302,6 +306,7 @@ roles:
     end: 2008
     stack: [.NET, MySQL, R]
     tags: [investigacion, modelado]
+    condensed: true
     highlights:
       - es: >-
           Diseño y desarrollo de modelos matemáticos y algoritmos de predicción meteorológica a

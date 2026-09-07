@@ -143,27 +143,21 @@ variants:
         Ingeniero de software fullstack con más de 15 años construyendo y sosteniendo productos
         digitales en producción: aplicaciones web, aplicaciones móviles para iOS y Android, y las
         APIs e integraciones que las conectan. Cubro el ciclo completo, desde el levantamiento y
-        la arquitectura hasta las pruebas, el despliegue y la operación, y decido sobre
-        infraestructura cloud considerando costo y límite de escalabilidad, no sólo capacidad
-        técnica.
+        la arquitectura hasta las pruebas, el despliegue y la operación.
 
-        Uso inteligencia artificial generativa como parte del trabajo diario en los dos sentidos:
-        desarrollo asistido por agentes bajo revisión humana, y construcción de servidores MCP
-        que exponen una plataforma a asistentes de IA con su modelo de dominio y sus permisos. Me
-        interesa particularmente tomar prototipos que ya demuestran una idea y llevarlos a
-        soluciones que aguanten producción, con seguridad, pruebas y observabilidad.
+        Uso inteligencia artificial generativa en los dos sentidos: desarrollando con agentes
+        bajo revisión humana, y construyendo plataformas que los asistentes puedan operar. Me
+        interesa el tramo que va del prototipo que ya prueba una idea a la solución que aguanta
+        producción.
       en: >
         Fullstack software engineer with 15+ years building and sustaining digital products in
         production: web applications, iOS and Android mobile apps, and the APIs and integrations
         that connect them. I cover the full cycle, from requirements and architecture through
-        testing, deployment and operation, and I make cloud infrastructure decisions on cost and
-        scalability limits, not only technical capability.
+        testing, deployment and operation.
 
-        I use generative AI as part of the daily work in both directions: agent-assisted
-        development under human review, and building MCP servers that expose a platform to AI
-        assistants with its domain model and its permissions. I am particularly interested in
-        taking prototypes that already prove an idea and evolving them into solutions that hold
-        up in production, with security, testing and observability.
+        I use generative AI in both directions: building with agents under human review, and
+        building platforms that assistants can operate. I am interested in the stretch that runs
+        from the prototype that proves an idea to the solution that holds up in production.
 
     specialties:
       - es: >-

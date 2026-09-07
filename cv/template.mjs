@@ -13,13 +13,13 @@ const L = {
     profile: 'Perfil profesional', specialties: 'Áreas de especialización',
     experience: 'Experiencia profesional', skills: 'Competencias técnicas',
     education: 'Educación', projects: 'Proyectos destacados',
-    opensource: 'Open source', note: 'Nota',
+    opensource: 'Open source', note: 'Nota', earlier: 'Experiencia previa',
   },
   en: {
     profile: 'Professional profile', specialties: 'Areas of expertise',
     experience: 'Professional experience', skills: 'Technical skills',
     education: 'Education', projects: 'Selected projects',
-    opensource: 'Open source', note: 'Note',
+    opensource: 'Open source', note: 'Note', earlier: 'Earlier roles',
   },
 };
 
@@ -56,21 +56,31 @@ export function renderCvBody({ locale = 'es', contact = null, sections, variant 
 
   if (want('specialties')) {
     out.push(`<section class="cv-section"><h2>${l.specialties}</h2>
-      <ul>${li(p.specialties, locale)}</ul></section>`);
+      <ul class="cv-cols">${li(p.specialties, locale)}</ul></section>`);
   }
 
   if (want('experience')) {
-    const jobs = roles().map((r) => `
+    const jobs = roles().filter((r) => !r.condensed).map((r) => `
       <article class="cv-job">
         <div class="cv-job-head">
-          <h3>${esc(t(r.role, locale))} · ${esc(t(r.company, locale))}</h3>
+          <h3>${esc(t(r.role, locale))}, ${esc(t(r.company, locale))}</h3>
           <span class="cv-when">${esc(formatPeriod(r, locale))}</span>
         </div>
         ${r.stack?.length ? `<p class="cv-stack">${esc(r.stack.join(' · '))}</p>` : ''}
         ${r.highlights?.length ? `<ul>${li(r.highlights, locale)}</ul>` : ''}
       </article>`).join('');
+    // Los cargos anteriores a 2015 no sostienen el argumento actual y ocupaban una página
+    // entera. Se conservan en los datos —el sitio los muestra completos— y aquí se resumen.
+    const old = roles().filter((r) => r.condensed);
+    let earlier = '';
+    if (old.length) {
+      const years = old.flatMap((r) => [r.start, r.end]).filter(Boolean)
+        .map((v) => Number(String(v).slice(0, 4)));
+      const names = old.map((r) => t(r.company, locale)).join(', ');
+      earlier = `<p class="cv-earlier"><b>${esc(l.earlier)} (${Math.min(...years)}–${Math.max(...years)}):</b> ${esc(names)}</p>`;
+    }
     out.push(`<section class="cv-section"><h2>${l.experience}</h2>
-      <p class="cv-note">${esc(t(data.experience.note, locale))}</p>${jobs}</section>`);
+      <p class="cv-note">${esc(t(data.experience.note, locale))}</p>${jobs}${earlier}</section>`);
   }
 
   if (want('skills')) {
@@ -89,7 +99,8 @@ export function renderCvBody({ locale = 'es', contact = null, sections, variant 
       }
       return `<p class="cv-skill"><b>${esc(t(g.label, locale))}:</b> ${parts.filter(Boolean).join(' ')}</p>`;
     }).join('');
-    out.push(`<section class="cv-section"><h2>${l.skills}</h2>${rows}</section>`);
+    out.push(`<section class="cv-section"><h2>${l.skills}</h2>
+      <div class="cv-cols">${rows}</div></section>`);
   }
 
   if (want('opensource')) {

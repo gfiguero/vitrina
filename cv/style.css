@@ -7,8 +7,8 @@
   --cv-line: #d8d4cd;
   --cv-accent: #8a4b2a;
   font-family: "Iowan Old Style", Palatino, Georgia, serif;
-  font-size: 9.6pt;
-  line-height: 1.42;
+  font-size: 10.2pt;
+  line-height: 1.5;
   color: var(--cv-ink);
   max-width: 46rem;
   margin: 0 auto;
@@ -28,9 +28,9 @@
   color: var(--cv-accent); border-bottom: .5pt solid var(--cv-line);
   padding-bottom: .12rem; margin-bottom: .4rem;
 }
-.cv p { margin: 0 0 .4rem; text-align: justify; hyphens: auto; }
+.cv p { margin: 0 0 .4rem; hyphens: auto; }
 .cv ul { margin: .18rem 0 .1rem; padding-left: .95rem; }
-.cv li { margin: .1rem 0; text-align: justify; hyphens: auto; }
+.cv li { margin: .1rem 0; hyphens: auto; }
 .cv li::marker { color: var(--cv-faint); }
 
 .cv-job { margin-bottom: .5rem; }
@@ -42,7 +42,12 @@
 .cv-note { font-size: 8.6pt; color: var(--cv-faint); font-style: italic; margin-bottom: .5rem; }
 .cv-skill { margin: 0 0 .18rem; }
 .cv-skill b { font-weight: 600; }
+.cv-earlier { font-size: 9pt; color: var(--cv-soft); margin-top: .3rem; }
 .cv-keywords { font-size: 8.4pt; color: var(--cv-faint); }
+.cv-cols { columns: 2; column-gap: 8mm; }
+.cv-cols > * { break-inside: avoid; }
+.cv-job ul { padding-right: 14mm; }
+
 .cv-inline { display: flex; flex-wrap: wrap; gap: .1rem .55rem; font-size: 9pt; list-style: none; padding: 0; margin: .1rem 0; }
 
 @media print {
@@ -77,13 +82,16 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, .07), 0 10px 30px rgba(0, 0, 0, .07);
 }
 /* En pantalla el cuerpo de 9.6pt queda pequeño: sube sólo en la vista web. */
-.cv-paper .cv { font-size: 10.8pt; }
+.cv-paper .cv { font-size: 11pt; }
 
 @media (max-width: 40rem) {
   .cv-paper { padding: 1.5rem 1.25rem; border-radius: 0; margin-left: -1.5rem; margin-right: -1.5rem; }
+  /* En pantalla angosta dos columnas dejan una medida ilegible: vuelve a una. */
+  .cv-cols { columns: 1; }
+  .cv-job ul { padding-right: 0; }
 }
 
 @media print {
   .cv-paper { background: none; border: 0; box-shadow: none; padding: 0; margin: 0; }
-  .cv-paper .cv { font-size: 9.6pt; }
+  .cv-paper .cv { font-size: 10.2pt; }
 }

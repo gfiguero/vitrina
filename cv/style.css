@@ -33,7 +33,7 @@
 .cv li { margin: .1rem 0; text-align: justify; hyphens: auto; }
 .cv li::marker { color: var(--cv-faint); }
 
-.cv-job { margin-bottom: .5rem; break-inside: avoid; }
+.cv-job { margin-bottom: .5rem; }
 .cv-job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
 .cv-job-head h3 { font-size: 10pt; }
 .cv-job-head .cv-when { font-size: 8.4pt; color: var(--cv-faint); white-space: nowrap; font-variant-numeric: tabular-nums; }
@@ -56,10 +56,10 @@
      abría la siguiente. */
   .cv-section > h2, .cv-note, .cv-job-head { break-after: avoid; }
 
-  /* Un cargo, una competencia o una viñeta no se parten a la mitad de una frase. Cuando el
-     bloque es más alto que la página el navegador ignora la regla y corta igual, que es el
-     comportamiento correcto. */
-  .cv-job, .cv-skill, .cv-note, .cv li { break-inside: avoid; }
+  /* Una competencia o una viñeta no se parten a la mitad de una frase. Un cargo sí puede
+     partirse: bloques como CaptaLog ocupan media página y prohibirles el corte los empuja
+     enteros a la página siguiente, dejando media página en blanco. */
+  .cv-skill, .cv-note, .cv li { break-inside: avoid; }
 
   /* Y si algo debe cortarse, nunca por una sola línea suelta. */
   .cv p, .cv li { orphans: 2; widows: 2; }

@@ -64,18 +64,10 @@ summary:
 # Ejes de especialización: lo que te diferencia, no lo que sabes usar.
 specialties:
   - es: >-
-      Sistemas de gestión social y atención al vecino: ficha social, registro de beneficiarios
-      y gestión de información para comunidades vecinales.
+      Integración de inteligencia artificial en flujos de trabajo internos mediante Model
+      Context Protocol (MCP).
     en: >-
-      Social management and citizen-facing systems: social registry, beneficiary records and
-      information management for neighbourhood communities.
-  - es: >-
-      Digitalización de procesos de fiscalización e inspección: pautas de inspección,
-      levantamiento de observaciones en terreno, seguimiento de acciones correctivas y
-      trazabilidad auditable.
-    en: >-
-      Digitising inspection and enforcement processes: inspection checklists, field
-      observations, corrective action tracking and an auditable trail.
+      Integrating AI into internal workflows through the Model Context Protocol (MCP).
   - es: >-
       Aplicaciones móviles offline-first para trabajo en terreno: captura de información sin
       conectividad y sincronización posterior con conciliación de datos, aplicable a sectores
@@ -84,6 +76,13 @@ specialties:
       Offline-first mobile apps for field work: capture without connectivity and later
       synchronisation with data reconciliation, applicable to rural or poorly covered areas.
   - es: >-
+      Digitalización de procesos de fiscalización e inspección: pautas de inspección,
+      levantamiento de observaciones en terreno, seguimiento de acciones correctivas y
+      trazabilidad auditable.
+    en: >-
+      Digitising inspection and enforcement processes: inspection checklists, field
+      observations, corrective action tracking and an auditable trail.
+  - es: >-
       Gestión ambiental digitalizada: sistemas de cálculo de huella de carbono y de gestión de
       residuos, aplicables a reportería ambiental municipal y seguimiento de ordenanzas de
       reciclaje.
@@ -91,17 +90,17 @@ specialties:
       Digitised environmental management: carbon footprint and waste management systems,
       applicable to municipal environmental reporting and recycling compliance.
   - es: >-
-      Integración entre plataformas y bases de datos de reparticiones públicas, incluyendo
-      entornos legacy sin documentación.
-    en: >-
-      Integration between public sector platforms and databases, including undocumented legacy
-      environments.
-  - es: >-
       Administración de infraestructura y servicios cloud, con dimensionamiento y control de
       costos para presupuestos acotados.
     en: >-
       Infrastructure and cloud services administration, with sizing and cost control for
       constrained budgets.
+  - es: >-
+      Integración entre plataformas y bases de datos de reparticiones públicas, incluyendo
+      entornos legacy sin documentación.
+    en: >-
+      Integration between public sector platforms and databases, including undocumented legacy
+      environments.
   - es: >-
       Modernización de trámites: digitalización documental, firma electrónica y automatización
       de flujos administrativos.
@@ -109,10 +108,11 @@ specialties:
       Modernising bureaucratic procedures: document digitisation, electronic signature and
       administrative workflow automation.
   - es: >-
-      Integración de inteligencia artificial en flujos de trabajo internos mediante Model
-      Context Protocol (MCP).
+      Sistemas de gestión social y atención al vecino: ficha social, registro de beneficiarios
+      y gestión de información para comunidades vecinales.
     en: >-
-      Integrating AI into internal workflows through the Model Context Protocol (MCP).
+      Social management and citizen-facing systems: social registry, beneficiary records and
+      information management for neighbourhood communities.
 
 # Variantes de posicionamiento para una postulación concreta. Sólo afectan al CV generado
 # (`npm run cv -- --variant <id>`); el sitio siempre publica el perfil por defecto.

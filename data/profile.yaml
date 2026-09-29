@@ -204,3 +204,103 @@ variants:
         en: >-
           Working in cross-functional teams and on undocumented legacy systems, including
           integration between platforms from different organisations.
+
+  mtt:
+    label:
+      es: "Trámites digitales del Estado: autenticación, formularios públicos y agendamiento"
+      en: "Government digital services: authentication, public forms and scheduling"
+
+    headline:
+      es: "Ingeniero de Software Fullstack · Servicios Digitales del Estado"
+      en: "Fullstack Software Engineer · Government Digital Services"
+
+    tagline:
+      es: >-
+        Conozco los trámites de conducción desde la operación en CONASET, y construyo de punta
+        a punta el software que lleva un trámite a línea: autenticación ciudadana, formularios
+        públicos y agendamiento.
+      en: >-
+        I know driver licensing from the operations side at CONASET, and I build end to end the
+        software that takes a public service online: citizen authentication, public forms and
+        scheduling.
+
+    summary:
+      es: >
+        Ingeniero de software fullstack con más de 15 años de experiencia, tres de ellos dentro
+        del Estado operando en CONASET el sistema de exámenes de conducir que usan las
+        municipalidades: soporte directo a los municipios, bases de datos, migraciones,
+        respaldos, pruebas de seguridad, y la contraparte técnica con los datacenters del
+        Ministerio de Transportes y con los proveedores de desarrollo y soporte. Conozco el
+        trámite desde el mesón municipal hasta el servidor. En ese mismo cargo fui jefe de
+        proyecto y único desarrollador de SIEC3, el sistema de estadísticas de accidentes de
+        tránsito de Carabineros, que reescribí completo a partir de un código legacy abandonado.
+
+        Hoy, como miembro del equipo fundador de CaptaLog, diseño, construyo y opero de punta a
+        punta una plataforma web y una aplicación móvil en producción: autenticación OpenID
+        Connect con PKCE, un motor de formularios configurable, pruebas automatizadas en cada
+        commit y desarrollo asistido por agentes de IA bajo revisión humana. Me incorporo a
+        sistemas que no escribí, incluidos entornos legacy sin documentación, y los extiendo
+        sin romper lo que ya funciona.
+      en: >
+        Fullstack software engineer with 15+ years of experience, three of them inside
+        government running, at CONASET, the driving test system used by municipalities: direct
+        support to municipalities, databases, migrations, backups, security testing, and acting
+        as technical counterpart to the Ministry of Transport datacenters and to the
+        development and support vendors. I know the process from the municipal counter to the
+        server. In the same role I was project lead and sole developer of SIEC3, the national
+        police's road accident statistics system, which I rewrote in full from abandoned legacy
+        code.
+
+        Today, as a founding team member at CaptaLog, I design, build and run end to end a web
+        platform and a mobile app in production: OpenID Connect authentication with PKCE, a
+        configurable form engine, automated tests on every commit and agent-assisted
+        development under human review. I join systems I did not write, including undocumented
+        legacy environments, and extend them without breaking what already works.
+
+    specialties:
+      - es: >-
+          Autenticación ciudadana: integración con Clave Única en la construcción de SIEC3 y,
+          hoy, autenticación OpenID Connect con PKCE en producción.
+        en: >-
+          Citizen authentication: integrated Clave Única, Chile's national digital identity,
+          while building SIEC3, and today run OpenID Connect authentication with PKCE in
+          production.
+      - es: >-
+          Agendamiento y asignación de horas: colas, flujos de atención, control del tiempo y
+          permisos con ventanas de acceso.
+        en: >-
+          Scheduling and appointment allocation: queues, service flows, time control and
+          permissions with access windows.
+      - es: >-
+          Formularios públicos accesibles con el Kit Digital de gob.cl, y motores de formularios
+          con múltiples tipos de pregunta y estructuras anidadas.
+        en: >-
+          Accessible public forms with the gob.cl Digital Kit, and form engines with multiple
+          question types and nested structures.
+      - es: >-
+          Operación del sistema de exámenes de conducir de las municipalidades en CONASET:
+          soporte a municipios, bases de datos, migraciones, respaldos y pruebas de seguridad.
+        en: >-
+          Operated the municipal driving test system at CONASET: support to municipalities,
+          databases, migrations, backups and security testing.
+      - es: >-
+          Incorporación rápida a sistemas existentes, incluidos entornos legacy sin
+          documentación: ingeniería inversa de código y modelos de datos para extenderlos o
+          reescribirlos, en proyectos entre distintas reparticiones públicas.
+        en: >-
+          Fast onboarding onto existing systems, including undocumented legacy environments:
+          reverse engineering code and data models to extend or rewrite them, in projects
+          spanning several public agencies.
+      - es: >-
+          Entrega de punta a punta con calidad sostenida: pruebas automatizadas, análisis
+          estático de seguridad y observabilidad, con desarrollo asistido por agentes de IA bajo
+          revisión humana.
+        en: >-
+          End-to-end delivery with sustained quality: automated tests, static security analysis
+          and observability, with agent-assisted development under human review.
+      - es: >-
+          Infraestructura y operación en producción, y trato directo con datacenters y
+          proveedores como contraparte técnica.
+        en: >-
+          Infrastructure and production operations, and dealing directly with datacenters and
+          vendors as technical counterpart.

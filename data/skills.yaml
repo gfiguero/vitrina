@@ -51,7 +51,7 @@ groups:
       en: >-
         REST API design and integration. HTTP at specification level: method semantics, PATCH
         and cache behaviour.
-    items: [REST, HTTP, OAuth2, webhooks, sincronización offline, ingesta IoT]
+    items: [REST, HTTP, OAuth2, OpenID Connect, PKCE, Clave Única, webhooks, sincronización offline, ingesta IoT]
   - id: quality
     label: { es: Calidad, pruebas y observabilidad, en: Quality, testing and observability }
     featured: true
@@ -102,6 +102,10 @@ groups:
     items:
       - { es: Ingeniería inversa y reconstrucción de software sin documentación, en: Reverse engineering and reconstruction of undocumented software }
       - { es: Levantamiento de requerimientos, en: Requirements gathering }
+      - es: Servicios públicos digitales con el Kit Digital de gob.cl y criterios de accesibilidad
+        en: Public digital services with the gob.cl Digital Kit and accessibility criteria
+      - es: "Agendamiento y asignación de horas: colas, flujos de atención y ventanas de tiempo"
+        en: "Scheduling and appointment allocation: queues, service flows and time windows"
       - { es: Contenerización de aplicaciones y servicios, en: Containerising applications and services }
       - es: >-
           Automatización en Python: herramientas de línea de comandos, sincronización incremental

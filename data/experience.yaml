@@ -58,6 +58,11 @@ roles:
           as a fixture, so its transformation tests fail when the contract moves. Divergence
           between the two sides surfaces in CI instead of in the field.
       - es: >-
+          Diseño e implementación del sistema de autenticación de la plataforma sobre OpenID
+          Connect con PKCE.
+        en: >-
+          Designed and implemented the platform's authentication on OpenID Connect with PKCE.
+      - es: >-
           Desarrollo fullstack de la plataforma web, incluyendo el motor de pautas de inspección
           con múltiples tipos de pregunta y estructuras anidadas.
         en: >-
@@ -160,6 +165,12 @@ roles:
     highlights:
       - es: Liderazgo técnico en soluciones de gestión operacional automatizada.
         en: Technical leadership on automated operational management solutions.
+      - es: >-
+          Sistema de permisos y accesos con control horario y ventanas de acceso por usuario y
+          recurso.
+        en: >-
+          Permissions and access system with time-based control and access windows per user and
+          resource.
       - es: Actualización de endpoints, integración de aplicaciones y optimización de recursos.
         en: Endpoint modernisation, application integration and resource optimisation.
       - es: Manejo de grandes volúmenes de datos sobre sistemas sin documentación previa.
@@ -177,6 +188,48 @@ roles:
     tags: [sector-publico, integracion, legacy]
     highlights:
       - es: >-
+          Jefe de proyecto y único desarrollador de SIEC3 (Sistema Integrado de Estadísticas de
+          Carabineros), iniciativa conjunta de Carabineros y los ministerios de Transportes y de
+          Salud para registrar y clasificar accidentes de tránsito y obtener análisis que
+          orienten la prevención a nivel público.
+        en: >-
+          Project lead and sole developer of SIEC3, the national police's integrated road
+          accident statistics system: a joint initiative with the Ministries of Transport and
+          Health to record and classify road accidents and produce analysis to guide public
+          prevention policy.
+      - es: >-
+          Retomé el proyecto tras años de abandono, con su código en C# sobre módulos
+          descontinuados: por ingeniería inversa del código y del modelo de datos traspasé
+          requerimientos, modelos y casos de uso, y reescribí la aplicación completa en Symfony 2
+          durante cerca de un año y medio, con autenticación mediante Clave Única. El código
+          quedó entregado en los repositorios oficiales de Carabineros.
+        en: >-
+          Picked the project up after years of abandonment, its C# code built on discontinued
+          modules: by reverse engineering the code and data model I carried over requirements,
+          models and use cases, and rewrote the entire application in Symfony 2 over roughly a
+          year and a half, with authentication through Clave Única. The code was delivered to
+          the national police's official repositories.
+      - es: >-
+          Operación y mantención en CONASET del sistema de exámenes de conducir que usan las
+          municipalidades, en todos sus frentes: soporte directo a los municipios,
+          administración de sistemas y bases de datos, y actualización del banco de preguntas.
+        en: >-
+          Ran and maintained, at CONASET, the driving test system used by municipalities, across
+          every front: direct support to municipalities, systems and database administration,
+          and updates to the question bank.
+      - es: >-
+          Migraciones, respaldos, reparaciones y pruebas de seguridad sobre el sistema en
+          producción.
+        en: >-
+          Migrations, backups, repairs and security testing on the production system.
+      - es: >-
+          Contraparte técnica frente a los datacenters del Ministerio de Transportes, gestionados
+          como proveedor de servicios, y frente a los proveedores externos de desarrollo y
+          soporte.
+        en: >-
+          Technical counterpart to the Ministry of Transport datacenters, managed as a service
+          provider, and to the external development and support vendors.
+      - es: >-
           Mantención operacional y gestión de proyectos estratégicos con la Comisión Nacional de
           Seguridad de Tránsito, Carabineros de Chile, Ministerio de Transportes y
           Telecomunicaciones, Ministerio de Salud y Registro Civil.
@@ -184,12 +237,6 @@ roles:
           Operational maintenance and management of strategic projects with the National Road
           Safety Commission, the national police force, the Ministry of Transport and
           Telecommunications, the Ministry of Health and the Civil Registry.
-      - es: >-
-          Iniciativas orientadas a reducir la mortalidad en accidentes de tránsito mediante
-          integración de datos entre instituciones.
-        en: >-
-          Initiatives aimed at reducing road accident mortality through cross-institution data
-          integration.
 
   - company: Unisign
     role:

@@ -9,11 +9,19 @@ degrees:
       - es: "Ayudante y tutor en los departamentos de Física e Informática."
         en: "Teaching assistant and tutor in the Physics and Computer Science departments."
       - es: >-
+          Financié mis estudios con ayudantías, clases particulares y desarrollo web profesional,
+          lo que me dio experiencia en la industria desde los primeros años.
+        en: >-
+          Paid my own way through university with teaching assistantships, private tutoring and
+          professional web development, which gave me industry experience from my first years.
+      - es: >-
           Colaborador de la Federación de Estudiantes y centros de alumnos; destacado por varios
           años consecutivos en actividades extraprogramáticas.
         en: >-
           Contributor to the student federation and student councils; recognised for several
           consecutive years in extracurricular activities.
+      - es: "Mantengo la práctica de programación algorítmica en LeetCode."
+        en: "I keep up my algorithmic programming practice on LeetCode."
 
 leadership:
   label:

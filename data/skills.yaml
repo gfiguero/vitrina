@@ -16,7 +16,7 @@ groups:
         Node.js as the everyday runtime for JavaScript and TypeScript work: build tooling,
         command line scripts and test suites. On the web, building my own interfaces with
         React, Next.js and Astro.
-    items: [Node.js, React, Next.js, Astro, Ruby on Rails, Symfony, CodeIgniter, Hotwire, Stimulus, Turbo, Tailwind, Bootstrap, jQuery]
+    items: [Node.js, React, Next.js, Astro, Ruby on Rails, Symfony, Doctrine, Twig, Composer, CodeIgniter, Hotwire, Stimulus, Turbo, Tailwind, Bootstrap, jQuery]
   - id: mobile
     label: { es: Desarrollo móvil, en: Mobile }
     featured: true
@@ -51,22 +51,24 @@ groups:
       en: >-
         REST API design and integration. HTTP at specification level: method semantics, PATCH
         and cache behaviour.
-    items: [REST, HTTP, OAuth2, OpenID Connect, PKCE, Clave Única, webhooks, sincronización offline, ingesta IoT]
+    items: [REST, HTTP, OAuth2, OpenID Connect, PKCE, Clave Única, webhooks, { es: sincronización offline, en: offline sync }, { es: ingesta IoT, en: IoT ingestion }]
   - id: quality
     label: { es: Calidad, pruebas y observabilidad, en: Quality, testing and observability }
     featured: true
     note:
       es: >-
-        Jest con suites unitarias y de integración separadas, Testing Library, Minitest y
+        Desarrollo guiado por pruebas (TDD) y diseño guiado por el dominio (DDD) como práctica
+        habitual. Jest con suites unitarias y de integración separadas, Testing Library, Minitest y
         Capybara para pruebas de sistema, cobertura medida con SimpleCov. Análisis estático de
         seguridad con Brakeman y eslint-plugin-security; RuboCop, ESLint y Prettier ejecutados
         en cada commit. Observabilidad en producción con Sentry.
       en: >-
-        Jest with separate unit and integration suites, Testing Library, Minitest and Capybara
+        Test-driven development (TDD) and domain-driven design (DDD) as everyday practice. Jest
+        with separate unit and integration suites, Testing Library, Minitest and Capybara
         for system tests, coverage measured with SimpleCov. Static security analysis with
         Brakeman and eslint-plugin-security; RuboCop, ESLint and Prettier on every commit.
         Production observability with Sentry.
-    items: [Jest, Testing Library, Minitest, Capybara, SimpleCov, Brakeman, ESLint, RuboCop, Sentry]
+    items: [TDD, DDD, Jest, Testing Library, Minitest, Capybara, SimpleCov, Brakeman, ESLint, RuboCop, Sentry]
 
   - id: ai
     label: { es: Inteligencia artificial aplicada, en: Applied AI }
@@ -84,7 +86,7 @@ groups:
         opencode as a model-agnostic harness, local models through Ollama when the code cannot
         leave the machine, and an agentic workflow with one worktree per task and human review
         before merging.
-    items: [MCP, Claude Code, opencode, Ollama, modelos locales, LLM tooling]
+    items: [MCP, Claude Code, opencode, Ollama, { es: modelos locales, en: local models }, LLM tooling]
   - id: documents
     label: { es: Documentación digital, en: Digital documents }
     featured: false
@@ -95,7 +97,7 @@ groups:
       en: >-
         Electronic signature and its legal validity under ESIGN/UETA and Latin American
         equivalents; evaluation of open source document signing solutions.
-    items: [firma electrónica, PDF, verificación por QR]
+    items: [{ es: firma electrónica, en: electronic signature }, PDF, { es: verificación por QR, en: QR verification }]
   - id: other
     label: { es: Otras capacidades, en: Other capabilities }
     featured: false

@@ -184,7 +184,7 @@ roles:
       en: Innovation and Technology Expert
     start: 2018
     end: 2021
-    stack: [Symfony, .NET, Java, Ruby, MySQL, PostgreSQL, DB2, CentOS]
+    stack: [PHP, Symfony, Doctrine, Twig, Composer, .NET, Java, Ruby, MySQL, PostgreSQL, DB2, CentOS]
     tags: [sector-publico, integracion, legacy]
     highlights:
       - es: >-
@@ -260,7 +260,7 @@ roles:
       en: Fullstack Developer
     start: 2013
     end: 2017
-    stack: [SQL, VPS]
+    stack: [PHP, Symfony, Doctrine, Twig, Composer, SQL, VPS]
     tags: [freelance, sector-publico]
     highlights:
       - es: >-
@@ -278,7 +278,7 @@ roles:
       en: Analyst and Developer
     start: 2013
     end: 2015
-    stack: [CodeIgniter, Symfony, HTML, VPS]
+    stack: [PHP, CodeIgniter, Symfony, HTML, VPS]
     tags: [sector-publico, social, liderazgo]
     condensed: true
     highlights:

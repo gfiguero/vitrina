@@ -13,13 +13,13 @@ const L = {
     profile: 'Perfil profesional', specialties: 'Áreas de especialización',
     experience: 'Experiencia profesional', skills: 'Competencias técnicas',
     education: 'Educación', projects: 'Proyectos destacados',
-    opensource: 'Open source', note: 'Nota', earlier: 'Experiencia previa',
+    opensource: 'Open source', note: 'Nota', earlier: 'Experiencia previa', languages: 'Idiomas',
   },
   en: {
     profile: 'Professional profile', specialties: 'Areas of expertise',
     experience: 'Professional experience', skills: 'Technical skills',
     education: 'Education', projects: 'Selected projects',
-    opensource: 'Open source', note: 'Note', earlier: 'Earlier roles',
+    opensource: 'Open source', note: 'Note', earlier: 'Earlier roles', languages: 'Spoken languages',
   },
 };
 
@@ -99,8 +99,13 @@ export function renderCvBody({ locale = 'es', contact = null, sections, variant 
       }
       return `<p class="cv-skill"><b>${esc(t(g.label, locale))}:</b> ${parts.filter(Boolean).join(' ')}</p>`;
     }).join('');
+    // Los idiomas van como una fila más: quien filtra por inglés debe encontrar el nivel real.
+    const spoken = (data.skills.languages_spoken ?? [])
+      .map((x) => `${t(x.name, locale)} — ${t(x.level, locale)}`).join(' · ');
+    const langs = spoken
+      ? `<p class="cv-skill"><b>${esc(l.languages)}:</b> ${esc(spoken)}</p>` : '';
     out.push(`<section class="cv-section"><h2>${l.skills}</h2>
-      <div class="cv-cols">${rows}</div></section>`);
+      <div class="cv-cols">${rows}${langs}</div></section>`);
   }
 
   if (want('opensource')) {

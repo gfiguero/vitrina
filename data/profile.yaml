@@ -304,3 +304,195 @@ variants:
         en: >-
           Infrastructure and production operations, and dealing directly with datacenters and
           vendors as technical counterpart.
+
+  php:
+    label:
+      es: "Backend PHP y frameworks MVC: Symfony y Ruby on Rails"
+      en: "PHP backend and MVC frameworks: Symfony and Ruby on Rails"
+
+    headline:
+      es: "Ingeniero de Software Fullstack · PHP, Symfony y Ruby on Rails"
+      en: "Fullstack Software Engineer · PHP, Symfony and Ruby on Rails"
+
+    tagline:
+      es: >-
+        Más de una década escribiendo PHP en producción, de PHP 5 a PHP 8, y hoy Ruby on Rails:
+        frameworks MVC del lado servidor, modelos relacionales e integraciones con sistemas
+        externos.
+      en: >-
+        Over a decade writing PHP in production, from PHP 5 to PHP 8, and Ruby on Rails today:
+        server-side MVC frameworks, relational models and integrations with external systems.
+
+    summary:
+      es: >
+        Ingeniero de software fullstack con más de 15 años de experiencia. PHP fue mi lenguaje
+        principal entre 2008 y 2021: sistemas de gestión interna y reportería para retail,
+        software ERP-CRM y pedidos en línea, plataformas municipales y, en el Gobierno de Chile,
+        la reescritura completa de SIEC3, el sistema de estadísticas de accidentes de tránsito de
+        Carabineros, en Symfony con Doctrine y Twig. Adopté PHP 7 y luego PHP 8 a medida que
+        salían, cuando buena parte de la industria prefería quedarse en PHP 5.
+
+        Desde 2021 trabajo en Ruby on Rails, hoy como miembro del equipo fundador de CaptaLog,
+        donde diseño, construyo y opero una plataforma web y una aplicación móvil en producción
+        sobre MySQL 8 en Amazon RDS: APIs REST, autenticación OpenID Connect con PKCE, pruebas
+        automatizadas en cada commit y desarrollo asistido por agentes de IA bajo revisión
+        humana. Me incorporo a sistemas que no escribí, incluidos entornos legacy sin
+        documentación, y los extiendo sin romper lo que ya funciona.
+      en: >
+        Fullstack software engineer with 15+ years of experience. PHP was my main language from
+        2008 to 2021: internal management and reporting systems for retail, ERP-CRM and online
+        ordering software, municipal platforms and, inside the Chilean government, the full
+        rewrite of SIEC3, the national police's road accident statistics system, in Symfony with
+        Doctrine and Twig. I adopted PHP 7 and then PHP 8 as they came out, while much of the
+        industry preferred to stay on PHP 5.
+
+        Since 2021 I have worked in Ruby on Rails, today as a founding team member at CaptaLog,
+        where I design, build and run a web platform and a mobile app in production on MySQL 8
+        on Amazon RDS: REST APIs, OpenID Connect authentication with PKCE, automated tests on
+        every commit and agent-assisted development under human review. I join systems I did
+        not write, including undocumented legacy environments, and extend them without breaking
+        what already works.
+
+    specialties:
+      - es: >-
+          Desarrollo backend en PHP sobre Symfony, con Doctrine, Twig y Composer, y adopción
+          temprana de cada versión mayor del lenguaje, de PHP 5 a PHP 8.
+        en: >-
+          Backend development in PHP on Symfony, with Doctrine, Twig and Composer, and early
+          adoption of every major language release, from PHP 5 to PHP 8.
+      - es: >-
+          Frameworks MVC del lado servidor en los dos ecosistemas que dieron forma a Laravel: los
+          componentes de Symfony sobre los que se construye y las convenciones de Ruby on Rails
+          que adoptó, como Active Record, migraciones y generadores.
+        en: >-
+          Server-side MVC frameworks in the two ecosystems that shaped Laravel: the Symfony
+          components it is built on and the Ruby on Rails conventions it adopted, such as Active
+          Record, migrations and generators.
+      - es: >-
+          Modelado relacional y SQL avanzado sobre MySQL, PostgreSQL y DB2, incluido MySQL 8 en
+          Amazon RDS en producción.
+        en: >-
+          Relational modelling and advanced SQL on MySQL, PostgreSQL and DB2, including MySQL 8
+          on Amazon RDS in production.
+      - es: >-
+          Diseño y consumo de APIs REST, e integración con servicios externos y plataformas de
+          reparticiones públicas, incluida autenticación con Clave Única y OpenID Connect con
+          PKCE.
+        en: >-
+          Designing and consuming REST APIs, and integrating with external services and public
+          sector platforms, including authentication with Clave Única and OpenID Connect with
+          PKCE.
+      - es: >-
+          Mantención y mejora de sistemas existentes, incluidos entornos legacy sin
+          documentación: corrección de errores, rendimiento, refactorización y, cuando hace
+          falta, reescrituras completas como SIEC3.
+        en: >-
+          Maintaining and improving existing systems, including undocumented legacy
+          environments: bug fixing, performance, refactoring and, when needed, full rewrites
+          such as SIEC3.
+      - es: >-
+          Prácticas de calidad sostenidas: pruebas unitarias, de integración y de sistema,
+          análisis estático de seguridad y observabilidad en producción.
+        en: >-
+          Sustained quality practice: unit, integration and system tests, static security
+          analysis and production observability.
+      - es: >-
+          Frontend con TypeScript, React y Hotwire, y despliegue y operación en AWS: EC2, RDS, S3
+          y CloudFront.
+        en: >-
+          Frontend with TypeScript, React and Hotwire, and deployment and operation on AWS: EC2,
+          RDS, S3 and CloudFront.
+
+  platform:
+    label:
+      es: "Ingeniería de plataforma con Ruby on Rails y React"
+      en: "Platform engineering with Ruby on Rails and React"
+
+    headline:
+      es: "Ingeniero de Software Senior · Ruby on Rails, React y Plataforma"
+      en: "Senior Software Engineer · Ruby on Rails, React and Platform"
+
+    tagline:
+      es: >-
+        Construyo con Ruby on Rails y React las APIs, contratos y componentes de los que dependen
+        otros equipos y aplicaciones, con pruebas en cada commit y responsabilidad sobre lo que
+        corre en producción.
+      en: >-
+        I build the APIs, contracts and components that other teams and applications depend on,
+        with Ruby on Rails and React, tests on every commit and ownership of what runs in
+        production.
+
+    summary:
+      es: >
+        Ingeniero de software fullstack con más de 15 años de experiencia, los últimos cinco en
+        Ruby on Rails. Lideré técnicamente el desarrollo en AIM Manager, donde diseñé un sistema
+        de permisos con control de acceso por ventanas de tiempo, y hoy, como miembro del equipo
+        fundador de CaptaLog, diseño, construyo y opero una plataforma web en Rails 8 y una
+        aplicación móvil en React Native y TypeScript, sobre MySQL 8 en Amazon RDS.
+
+        Mi trabajo tiende a ser de plataforma: la autenticación OpenID Connect con PKCE de la que
+        dependen la web y el móvil, contratos de sincronización versionados que el backend publica
+        y la app consume como fixtures, para que una divergencia falle en CI y no en terreno, y un
+        servidor MCP que expone el dominio de la plataforma a asistentes de IA. Escribo pruebas
+        unitarias, de integración y de sistema con cobertura medida, me hago cargo de los
+        incidentes en producción y documento lo que construyo para quienes lo van a usar.
+      en: >
+        Fullstack software engineer with 15+ years of experience, the last five in Ruby on Rails.
+        I led development technically at AIM Manager, where I designed a permissions system with
+        time-window access control, and today, as a founding team member at CaptaLog, I design,
+        build and run a Rails 8 web platform and a React Native and TypeScript mobile app, on
+        MySQL 8 on Amazon RDS.
+
+        My work tends to be platform work: the OpenID Connect with PKCE authentication that both
+        web and mobile rely on, versioned sync contracts that the backend publishes and the app
+        consumes as fixtures, so divergence fails in CI rather than in the field, and an MCP
+        server that exposes the platform domain to AI assistants. I write unit, integration and
+        system tests with measured coverage, own production incidents, and document what I build
+        for the people who will use it.
+
+    specialties:
+      - es: >-
+          Backend en Ruby on Rails: APIs REST, modelado de dominio y diseño relacional sobre MySQL
+          y PostgreSQL.
+        en: >-
+          Ruby on Rails backend: REST APIs, domain modelling and relational design on MySQL and
+          PostgreSQL.
+      - es: >-
+          Funcionalidad compartida de la que dependen otras aplicaciones: autenticación OpenID
+          Connect con PKCE, permisos por recurso y ventanas de tiempo, y contratos de API
+          versionados y verificados en CI.
+        en: >-
+          Shared functionality other applications depend on: OpenID Connect authentication with
+          PKCE, per-resource permissions with time windows, and versioned API contracts verified
+          in CI.
+      - es: >-
+          Frontend en TypeScript con React y React Native, y Hotwire del lado de Rails.
+        en: >-
+          Frontend in TypeScript with React and React Native, and Hotwire on the Rails side.
+      - es: >-
+          Calidad sostenida: Minitest y Capybara, Jest con suites separadas de unidad e
+          integración, cobertura medida, análisis estático de seguridad y linters en cada commit.
+        en: >-
+          Sustained quality practice: Minitest and Capybara, Jest with separate unit and
+          integration suites, measured coverage, static security analysis and linters on every
+          commit.
+      - es: >-
+          Responsabilidad en producción: observabilidad con Sentry, diagnóstico de fallas que no
+          se reproducen en el escritorio y estabilización de sistemas con usuarios activos.
+        en: >-
+          Production ownership: observability with Sentry, diagnosing failures that do not
+          reproduce on a desk, and stabilising live systems with active users.
+      - es: >-
+          Liderazgo técnico y mentoría: propuestas técnicas con sus trade-offs, revisión de
+          código, contraparte técnica de proveedores externos y años como ayudante y tutor
+          universitario.
+        en: >-
+          Technical leadership and mentoring: technical proposals with their trade-offs, code
+          review, technical counterpart to external vendors, and years as a university teaching
+          assistant and tutor.
+      - es: >-
+          Sistemas existentes y sin documentación: ingeniería inversa, refactorización y, cuando
+          hace falta, reescrituras completas como SIEC3.
+        en: >-
+          Existing and undocumented systems: reverse engineering, refactoring and, when needed,
+          full rewrites such as SIEC3.

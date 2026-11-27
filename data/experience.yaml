@@ -21,7 +21,7 @@ roles:
     start: 2024-12
     end: null
     current: true
-    stack: [Ruby on Rails 8, MySQL 8, Amazon RDS, Amazon EC2, React Native, Expo, TypeScript, SQLite, MCP]
+    stack: [Ruby on Rails 8, MySQL 8, Amazon RDS, Amazon EC2, React Native, Expo, TypeScript, SQLite, Go, MCP]
     tags: [saas, movil, offline-first, fundador, ia, producto, calidad]
     highlights:
       - es: >-
@@ -86,6 +86,12 @@ roles:
           Designed and built the MCP integration, exposing the platform to AI assistants for
           task creation, checklist editing and publishing, issue management and document
           lookup.
+      - es: >-
+          Mantención de un CLI en Go para ejecutar comandos directamente contra el backend de la
+          plataforma, desarrollado y mantenido con agentes de IA bajo revisión humana.
+        en: >-
+          Maintained a Go CLI for running commands directly against the platform backend, built
+          and maintained with AI agents under human review.
       - es: >-
           Desarrollo asistido por agentes como flujo de trabajo habitual: un worktree aislado por
           tarea, agentes que implementan y revisan contra convenciones escritas del repositorio,

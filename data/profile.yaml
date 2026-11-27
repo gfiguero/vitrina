@@ -496,3 +496,99 @@ variants:
         en: >-
           Existing and undocumented systems: reverse engineering, refactoring and, when needed,
           full rewrites such as SIEC3.
+
+  operations:
+    label:
+      es: "Control de gestión, datos y automatización de procesos"
+      en: "Management control, data and process automation"
+
+    headline:
+      es: "Ingeniero de Software · Datos, Indicadores y Automatización de Procesos"
+      en: "Software Engineer · Data, KPIs and Process Automation"
+
+    tagline:
+      es: >-
+        Convierto procesos manuales y datos dispersos en reportes, indicadores y herramientas que
+        se actualizan solas, para que la información llegue a quien decide sin armarla a mano.
+      en: >-
+        I turn manual processes and scattered data into reports, indicators and tools that keep
+        themselves up to date, so information reaches decision makers without being assembled by
+        hand.
+
+    summary:
+      es: >
+        Ingeniero de software con más de 15 años de experiencia construyendo sistemas de gestión,
+        reportes y análisis de datos para organizaciones públicas y privadas. Desarrollé sistemas de
+        administración de recursos para la Municipalidad de Quillota y para proyectos de
+        investigación de la Universidad Técnica Federico Santa María, sistemas de gestión interna
+        con generación de informes y consultas avanzadas para Cencosud, y fui jefe de proyecto de
+        SIEC3, el sistema con que Carabineros y los ministerios de Transportes y de Salud
+        registran y analizan los accidentes de tránsito para orientar la prevención.
+
+        Hoy, como miembro del equipo fundador de CaptaLog, participo en las decisiones de
+        producto, técnicas y de negocio de una plataforma que digitaliza inspecciones en terreno,
+        seguimiento de acciones correctivas y trazabilidad auditable. Uso inteligencia
+        artificial generativa a diario para automatizar trabajo y conecté la plataforma con
+        asistentes de IA. Me interesa el trabajo en que levantar un proceso, medirlo y
+        automatizarlo tiene un efecto directo sobre la operación.
+      en: >
+        Software engineer with 15+ years building management systems, reporting and data
+        analysis for public and private organisations. I built resource management systems
+        for the Municipality of Quillota and for research projects at Federico Santa María
+        Technical University, internal management systems with reporting and advanced queries
+        for Cencosud, and I was project lead of SIEC3, the system the national police and the
+        Ministries of Transport and Health use to record and analyse road accidents to guide
+        prevention.
+
+        Today, as a founding team member at CaptaLog, I take part in product, technical and
+        business decisions for a platform that digitises field inspections, corrective action
+        tracking and an auditable trail. I use generative AI daily to automate work and connected
+        the platform to AI assistants. I am drawn to work where mapping a process, measuring it
+        and automating it has a direct effect on operations.
+
+    specialties:
+      - es: >-
+          Reportes e indicadores de gestión: consultas SQL avanzadas sobre MySQL y PostgreSQL,
+          dashboards en Power BI, Tableau y Amazon QuickSight, e informes que se generan con un
+          clic a partir de datos consolidados desde varias fuentes.
+        en: >-
+          Management reports and indicators: advanced SQL queries on MySQL and PostgreSQL,
+          dashboards in Power BI, Tableau and Amazon QuickSight, and one-click reports built from
+          data consolidated from several sources.
+      - es: >-
+          Levantamiento y documentación de procesos, incluso sobre sistemas heredados sin
+          documentación, para traspasar requerimientos, modelos y casos de uso.
+        en: >-
+          Mapping and documenting processes, including on undocumented legacy systems, to carry
+          over requirements, models and use cases.
+      - es: >-
+          Automatización de flujos administrativos y operacionales: tareas repetitivas,
+          digitalización documental y herramientas internas a la medida del proceso.
+        en: >-
+          Automating administrative and operational workflows: repetitive tasks, document
+          digitisation and internal tools built around the process.
+      - es: >-
+          Inteligencia artificial generativa aplicada al análisis de datos, la elaboración de
+          reportes y la automatización, incluida su integración con sistemas internos mediante
+          Model Context Protocol (MCP).
+        en: >-
+          Generative AI applied to data analysis, reporting and automation, including integration
+          with internal systems through the Model Context Protocol (MCP).
+      - es: >-
+          Modelos de proyección: diseño de modelos matemáticos y algoritmos de predicción a partir
+          de fuentes estadísticas.
+        en: >-
+          Forecasting models: designing mathematical models and prediction algorithms from
+          statistical sources.
+      - es: >-
+          Control de costos de infraestructura y servicios tecnológicos para presupuestos
+          acotados, y contraparte técnica frente a proveedores externos.
+        en: >-
+          Cost control for technology infrastructure and services on constrained budgets, and
+          technical counterpart to external vendors.
+      - es: >-
+          Trabajo con distintas áreas de una organización: coordinación entre municipios,
+          ministerios, servicios públicos y proveedores para implementar y sostener mejoras.
+        en: >-
+          Working across an organisation's areas: coordinating municipalities, ministries, public
+          services and vendors to implement and sustain improvements.

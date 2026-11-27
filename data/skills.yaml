@@ -37,6 +37,17 @@ groups:
       es: "MySQL (incluida versión 8 sobre Amazon RDS), PostgreSQL, DB2. Diseño relacional y consultas avanzadas."
       en: "MySQL (including 8 on Amazon RDS), PostgreSQL, DB2. Relational design and advanced queries."
     items: [MySQL, PostgreSQL, SQLite, DB2, Amazon RDS]
+  - id: data
+    label: { es: Datos e inteligencia de negocios, en: Data and business intelligence }
+    featured: true
+    note:
+      es: >-
+        Preparación y traspaso de datos desde data warehouses y bases de producción hacia
+        herramientas de BI, y construcción de dashboards de indicadores para el negocio.
+      en: >-
+        Preparing and moving data from data warehouses and production databases into BI tools,
+        and building indicator dashboards for the business.
+    items: [Power BI, Tableau, Amazon QuickSight, data warehouse, SQL, Excel]
   - id: infra
     label: { es: Infraestructura y DevOps, en: Infrastructure and DevOps }
     featured: true

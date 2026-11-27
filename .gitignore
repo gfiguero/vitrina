@@ -25,3 +25,8 @@ private/*.yaml
 # Artefactos generados: los reconstruye la CI en cada push
 web/public/cv/
 web/public/og.png
+
+# fotos: sólo se versionan las finales para postular; originales y pruebas quedan fuera
+fotos/*
+!fotos/garri-linkedin-1080.jpg
+!fotos/garri-retrato-4x5.jpg

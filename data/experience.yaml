@@ -119,8 +119,8 @@ roles:
       en: Software Engineer
     start: 2024-11
     end: 2026-04
-    stack: [Ruby on Rails 8, MySQL 8, Amazon RDS, Amazon EC2]
-    tags: [saas, sostenibilidad, produccion]
+    stack: [Ruby on Rails 8, MySQL 8, Amazon RDS, Amazon EC2, Amazon QuickSight]
+    tags: [saas, sostenibilidad, produccion, datos]
     highlights:
       - es: >-
           Desarrollo y mantención de una plataforma SaaS orientada al cálculo de huella de
@@ -128,6 +128,12 @@ roles:
         en: >-
           Development and maintenance of a SaaS platform for carbon footprint calculation and
           waste management.
+      - es: >-
+          Construcción de dashboards en Amazon QuickSight sobre el repositorio de datos de la
+          plataforma, para que el negocio siguiera sus indicadores.
+        en: >-
+          Built Amazon QuickSight dashboards on the platform's data repository so the business
+          could track its indicators.
       - es: >-
           Resolución de problemas de producto surgidos del uso continuo de la plataforma en
           producción: diagnóstico, corrección y estabilización sobre un sistema en operación con
@@ -160,7 +166,7 @@ roles:
       en: Lead Fullstack Engineer
     start: 2021
     end: 2023
-    stack: [Ruby on Rails, Stimulus, Turbo, PostgreSQL, Tailwind, Docker]
+    stack: [Ruby on Rails, Stimulus, Turbo, PostgreSQL, Tailwind, Docker, Tableau, Power BI]
     tags: [liderazgo, datos, legacy]
     highlights:
       - es: Liderazgo técnico en soluciones de gestión operacional automatizada.
@@ -175,6 +181,12 @@ roles:
         en: Endpoint modernisation, application integration and resource optimisation.
       - es: Manejo de grandes volúmenes de datos sobre sistemas sin documentación previa.
         en: Handling large data volumes on systems with no prior documentation.
+      - es: >-
+          Traspaso de datos desde el data warehouse hacia Tableau y Power BI, para que el equipo de
+          inteligencia de negocios construyera sus reportes e indicadores.
+        en: >-
+          Moved data from the data warehouse into Tableau and Power BI so the business
+          intelligence team could build its reports and indicators.
 
   - company:
       es: Gobierno de Chile

@@ -44,7 +44,8 @@
 .cv-skill b { font-weight: 600; }
 .cv-earlier { font-size: 9pt; color: var(--cv-soft); margin-top: .3rem; }
 .cv-keywords { font-size: 8.4pt; color: var(--cv-faint); }
-.cv-cols { columns: 2; column-gap: 8mm; }
+/* Especialidades y competencias van en una sola columna a propósito: con dos, los lectores
+   automáticos de CV (ATS) extraen el texto línea a línea y mezclan ambas columnas. */
 .cv-cols > * { break-inside: avoid; }
 .cv-job ul { padding-right: 14mm; }
 
@@ -86,8 +87,6 @@
 
 @media (max-width: 40rem) {
   .cv-paper { padding: 1.5rem 1.25rem; border-radius: 0; margin-left: -1.5rem; margin-right: -1.5rem; }
-  /* En pantalla angosta dos columnas dejan una medida ilegible: vuelve a una. */
-  .cv-cols { columns: 1; }
   .cv-job ul { padding-right: 0; }
 }
 
